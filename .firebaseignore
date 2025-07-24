@@ -1,0 +1,23 @@
+
+# This file tells Firebase which files to ignore when deploying.
+# It's crucial for keeping the deployment package small and fast.
+
+# Ignore the node_modules directory, which contains all the project dependencies.
+# These are installed on the server automatically and should not be uploaded.
+node_modules
+
+# Ignore Firebase-specific cache and log files.
+.firebase
+
+# Ignore local environment variables.
+.env.local
+.env.*.local
+
+# Ignore Next.js build cache.
+.next
+
+# Ignore common development and git files.
+.DS_Store
+README.md
+.git
+.gitignore
