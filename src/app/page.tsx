@@ -321,7 +321,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button asChild size="lg" className="rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
-                <Link href="#" target="_blank">Fill Out Brief Form</Link>
+                <Link href="/brief-form">Fill Out Brief Form</Link>
               </Button>
             </div>
              <div className="mt-12 text-muted-foreground">
