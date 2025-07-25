@@ -24,6 +24,9 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { AnimatedWrapper } from "@/components/AnimatedWrapper";
+import { useState } from "react";
+import { generateCreativeBrief } from "@/ai/flows/generate-creative-brief";
+import { Loader2 } from "lucide-react";
 
 const briefFormSchema = z.object({
   name: z.string().min(2, {
@@ -48,6 +51,7 @@ const briefFormSchema = z.object({
 
 export default function BriefFormPage() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof briefFormSchema>>({
     resolver: zodResolver(briefFormSchema),
@@ -62,13 +66,30 @@ export default function BriefFormPage() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof briefFormSchema>) {
-    console.log(values);
-    toast({
-      title: "Brief Submitted!",
-      description: "Thank you. We have received your brief and will be in touch shortly.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof briefFormSchema>) {
+    setIsSubmitting(true);
+    try {
+      const result = await generateCreativeBrief(values);
+      toast({
+        title: "Brief Submitted & Processed!",
+        description: (
+          <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+            <code className="text-white whitespace-pre-wrap">{result.summary}</code>
+          </pre>
+        ),
+        duration: 15000,
+      });
+      form.reset();
+    } catch (error) {
+       toast({
+        title: "Error",
+        description: "There was an error processing your brief. Please try again.",
+        variant: "destructive",
+      });
+      console.error(error);
+    } finally {
+        setIsSubmitting(false);
+    }
   }
 
   return (
@@ -224,8 +245,8 @@ export default function BriefFormPage() {
                 )}
               />
               <div className="flex justify-center">
-                <Button type="submit" size="lg" className="rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity shadow-lg shadow-primary/30">
-                  Submit Brief
+                <Button type="submit" size="lg" disabled={isSubmitting} className="rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity shadow-lg shadow-primary/30 w-48">
+                   {isSubmitting ? <Loader2 className="animate-spin" /> : "Submit Brief"}
                 </Button>
               </div>
             </form>
