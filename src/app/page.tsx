@@ -112,12 +112,11 @@ export default function Home() {
       <section id="home" className="relative w-full h-dvh min-h-[700px] flex items-center justify-center text-center">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-purple-900/50 to-background -z-10" />
          <Image
-          src="/hero-background.jpg"
+          src="/hero.jpg"
           alt="Abstract AI background"
           fill
           priority
           className="object-cover absolute inset-0 opacity-10 -z-20"
-          data-ai-hint="abstract background"
         />
         <AnimatedWrapper className="container px-4 md:px-6">
           <div className="grid gap-6">
@@ -342,3 +341,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
