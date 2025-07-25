@@ -7,6 +7,9 @@ import { Footer } from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'IncDrops.ai - AI Content Authority',
   description: 'Masterful Prompt Engineering for Stunning Blogs, Visuals & More.',
+  icons: {
+    icon: '/favicon.jpg',
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="/favicon.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
