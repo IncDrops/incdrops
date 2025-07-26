@@ -80,10 +80,10 @@ export default function BriefFormPage() {
         duration: 15000,
       });
       form.reset();
-    } catch (error) {
+    } catch (error: any) {
        toast({
-        title: "Error",
-        description: "There was an error processing your brief. Please try again.",
+        title: "Error Processing Brief",
+        description: error?.message || "An unexpected error occurred. Please try again.",
         variant: "destructive",
       });
       console.error(error);
