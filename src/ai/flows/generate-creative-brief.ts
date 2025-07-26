@@ -67,8 +67,8 @@ const generateCreativeBriefFlow = ai.defineFlow(
   async input => {
     // 1. Generate the summary using the AI prompt
     const {output: summaryOutput} = await prompt(input);
-    if (!summaryOutput) {
-        throw new Error("Failed to generate brief summary from AI.");
+    if (!summaryOutput?.summary) {
+        throw new Error("Failed to generate brief summary from AI. The AI returned an empty response.");
     }
 
     // 2. Save the original brief and the new summary to Firestore
