@@ -10,8 +10,9 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import {firestore} from '@/lib/firebase';
-import { Timestamp } from 'firebase-admin/firestore';
+import { firestore } from '@/lib/firebase-client';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+
 
 const GenerateCreativeBriefInputSchema = z.object({
   name: z.string().describe('The full name of the client.'),
@@ -72,13 +73,14 @@ const generateCreativeBriefFlow = ai.defineFlow(
         throw new Error("Failed to generate brief summary from AI. The AI returned an empty response.");
     }
 
-    const briefsCollection = firestore.collection('briefs');
-    const briefDocument = await briefsCollection.add({
-      ...input,
-      summary: output.summary,
-      status: 'new',
-      createdAt: Timestamp.now(),
+    const briefsCollection = collection(firestore, 'briefs');
+    const briefDocument = await addDoc(briefsCollection, {
+        ...input,
+        summary: output.summary,
+        status: 'new',
+        createdAt: serverTimestamp(),
     });
+
 
     return {
       summary: output.summary,
