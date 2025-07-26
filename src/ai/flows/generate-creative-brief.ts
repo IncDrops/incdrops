@@ -65,24 +65,21 @@ const generateCreativeBriefFlow = ai.defineFlow(
     outputSchema: GenerateCreativeBriefOutputSchema,
   },
   async input => {
-    // 1. Generate the summary using the AI prompt
-    const {output: summaryOutput} = await prompt(input);
-    if (!summaryOutput?.summary) {
+    const {output} = await prompt(input);
+    if (!output?.summary) {
         throw new Error("Failed to generate brief summary from AI. The AI returned an empty response.");
     }
 
-    // 2. Save the original brief and the new summary to Firestore
     const briefsCollection = firestore.collection('briefs');
     const briefDocument = await briefsCollection.add({
       ...input,
-      summary: summaryOutput.summary,
-      status: 'new', // Default status for manual review
+      summary: output.summary,
+      status: 'new',
       createdAt: Timestamp.now(),
     });
 
-    // 3. Return the summary and the new document ID
     return {
-      summary: summaryOutput.summary,
+      summary: output.summary,
       briefId: briefDocument.id,
     };
   }
