@@ -3,7 +3,7 @@
 /**
  * @fileOverview This file defines a Genkit flow to process a client brief, generate a structured summary, and save it to Firestore.
  *
- * - generateCreativeBrief - A function that takes form data, generates an AI summary, and stores the brief.
+ * - generateCreativeBriefFlow - A function that takes form data, generates an AI summary, and stores the brief.
  * - GenerateCreativeBriefInput - The input type for the generateCreativebrief function.
  * - GenerateCreativeBriefOutput - The return type for the generateCreativeBrief function.
  */
@@ -31,12 +31,6 @@ const GenerateCreativeBriefOutputSchema = z.object({
 });
 export type GenerateCreativeBriefOutput = z.infer<typeof GenerateCreativeBriefOutputSchema>;
 
-export async function generateCreativeBrief(
-  input: GenerateCreativeBriefInput
-): Promise<GenerateCreativeBriefOutput> {
-  return generateCreativeBriefFlow(input);
-}
-
 const prompt = ai.definePrompt({
   name: 'generateCreativeBriefPrompt',
   input: {schema: GenerateCreativeBriefInputSchema},
@@ -58,7 +52,7 @@ const prompt = ai.definePrompt({
   `,
 });
 
-const generateCreativeBriefFlow = ai.defineFlow(
+export const generateCreativeBriefFlow = ai.defineFlow(
   {
     name: 'generateCreativeBriefFlow',
     inputSchema: GenerateCreativeBriefInputSchema,
@@ -66,6 +60,7 @@ const generateCreativeBriefFlow = ai.defineFlow(
   },
   async input => {
     const {output} = await prompt(input);
+    
     if (!output?.summary) {
         throw new Error("Failed to generate brief summary from AI. The AI returned an empty response.");
     }

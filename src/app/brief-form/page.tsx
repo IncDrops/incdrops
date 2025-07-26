@@ -25,7 +25,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { AnimatedWrapper } from "@/components/AnimatedWrapper";
 import { useState } from "react";
-import { generateCreativeBrief } from "@/ai/flows/generate-creative-brief";
+import { generateCreativeBriefFlow } from "@/ai/flows/generate-creative-brief";
 import { Loader2 } from "lucide-react";
 
 const briefFormSchema = z.object({
@@ -69,7 +69,7 @@ export default function BriefFormPage() {
   async function onSubmit(values: z.infer<typeof briefFormSchema>) {
     setIsSubmitting(true);
     try {
-      const result = await generateCreativeBrief(values);
+      const result = await generateCreativeBriefFlow(values);
       toast({
         title: "Brief Submitted & Processed!",
         description: (
