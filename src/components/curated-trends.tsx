@@ -54,7 +54,7 @@ export default function CuratedTrends() {
             {preGeneratedReports.map((item, index) => (
               <Card key={index} className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg">
                 <CardContent className="p-6">
-                  <p className="font-bold font-headline text-lg text-primary">Query: "{item.query}"</p>
+                  <p className="font-bold font-headline text-lg text-accent">Query: "{item.query}"</p>
                   <p className="mt-2 text-foreground/80">{item.report}</p>
                 </CardContent>
               </Card>
@@ -70,10 +70,10 @@ export default function CuratedTrends() {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="e.g., 'NFTs in gaming' or '#cleantok'"
-                    className="flex-grow"
+                    className="flex-grow bg-card/60 backdrop-blur-lg border-border/20"
                     disabled={isPending}
                 />
-                <Button type="submit" disabled={isPending} className="font-bold bg-gradient-primary text-primary-foreground animate-gradient">
+                <Button type="submit" disabled={isPending} className="font-bold bg-gradient-accent text-accent-foreground animate-gradient">
                     {isPending ? (
                       <LoaderCircle className="h-5 w-5 animate-spin" />
                     ) : (
@@ -87,7 +87,7 @@ export default function CuratedTrends() {
               <div className="mt-8">
                 <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg animate-in fade-in">
                   <CardContent className="p-6">
-                    <p className="font-bold font-headline text-lg text-primary">Report for: "{query}"</p>
+                    <p className="font-bold font-headline text-lg text-accent">Report for: "{query}"</p>
                     <p className="mt-2 text-foreground/80">{report}</p>
                   </CardContent>
                 </Card>

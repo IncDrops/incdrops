@@ -3,17 +3,17 @@ import { Button } from "./ui/button";
 
 const HeaderSection = () => {
     return (
-        <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-lg border-b border-border">
+        <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-lg border-b border-border/20">
             <div className="container mx-auto flex h-[72px] items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-2">
                     <Logo className="h-8 w-auto" />
                 </div>
                 <div className="flex items-center gap-4">
-                    <h1 className="hidden md:block text-center font-headline text-lg md:text-xl font-bold bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                    <h1 className="hidden md:block text-center font-headline text-lg md:text-xl font-bold bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent">
                         What’s the next big thing?
                     </h1>
                 </div>
-                <Button className="font-bold bg-gradient-primary text-primary-foreground animate-gradient">
+                <Button className="font-bold bg-gradient-accent text-accent-foreground animate-gradient">
                     Ask WillItTrend's AI
                 </Button>
             </div>

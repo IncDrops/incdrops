@@ -17,16 +17,16 @@ body {
     --popover: 240 60% 97%;
     --popover-foreground: 240 10% 15%;
 
-    --primary: 230 85% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 240 67% 94%; /* light lavender */
+    --primary-foreground: 240 10% 15%;
 
-    --secondary: 240 67% 94%; /* light lavender */
+    --secondary: 210 100% 85%; /* soft blue */
     --secondary-foreground: 240 10% 15%;
 
     --muted: 240 20% 94%;
     --muted-foreground: 240 4% 46%;
 
-    --accent: 240 20% 96%;
+    --accent: 210 100% 85%; /* soft blue */
     --accent-foreground: 240 10% 15%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,7 +34,7 @@ body {
 
     --border: 240 20% 90%;
     --input: 240 20% 96%;
-    --ring: 230 85% 65%;
+    --ring: 210 100% 85%;
 
     --radius: 0.75rem;
   }
@@ -49,16 +49,16 @@ body {
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 230 85% 65%;
+    --primary: 240 50% 80%; /* light lavender */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 100% 75%; /* soft blue */
+    --secondary-foreground: 240 10% 15%;
     
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 210 100% 75%; /* soft blue */
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -66,7 +66,7 @@ body {
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 230 85% 65%;
+    --ring: 210 100% 75%;
   }
 }
 
@@ -80,8 +80,11 @@ body {
 }
 
 @layer utilities {
-  .bg-gradient-primary {
-      @apply bg-gradient-to-br from-primary via-purple-500 to-pink-500;
+  .bg-gradient-accent {
+      @apply bg-gradient-to-br from-accent via-blue-300 to-indigo-300;
+  }
+  .dark .bg-gradient-accent {
+      @apply bg-gradient-to-br from-accent via-blue-500 to-indigo-500;
   }
   .animate-gradient {
       background-size: 200% 200%;

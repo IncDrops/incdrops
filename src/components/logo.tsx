@@ -8,8 +8,8 @@ const Logo = ({ className }: { className?: string }) => (
   >
     <defs>
       <linearGradient id="metallic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))', stopOpacity: 1 }} />
-        <stop offset="100%" style={{ stopColor: 'hsl(260,85%,75%)', stopOpacity: 1 }} />
+        <stop offset="0%" style={{ stopColor: 'hsl(var(--accent))', stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: 'hsl(220, 85%, 75%)', stopOpacity: 1 }} />
       </linearGradient>
     </defs>
     <text

@@ -19,11 +19,11 @@ const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
             </div>
             <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex-grow">
-                    <Badge variant="outline" className="mb-2">{post.tag}</Badge>
-                    <h3 className="text-lg font-bold font-headline leading-tight">{post.title}</h3>
+                    <Badge variant="secondary" className="mb-2">{post.tag}</Badge>
+                    <h3 className="text-lg font-bold font-headline leading-tight text-primary-foreground">{post.title}</h3>
                     <p className="text-muted-foreground mt-2 text-sm">{post.summary}</p>
                 </div>
-                <Button asChild variant="ghost" className="justify-start p-0 h-auto mt-4 text-primary font-bold">
+                <Button asChild variant="ghost" className="justify-start p-0 h-auto mt-4 text-accent font-bold">
                     <a href={post.link}>
                         Learn more
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

@@ -57,7 +57,7 @@ export default function InquiryModule() {
     }
 
     return (
-        <div className="p-6 bg-card/60 backdrop-blur-lg border border-border/20 shadow-xl shadow-primary/10 rounded-2xl">
+        <div className="p-6 bg-card/60 backdrop-blur-lg border border-border/20 shadow-xl shadow-accent/10 rounded-2xl">
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -68,7 +68,7 @@ export default function InquiryModule() {
                                 <FormItem>
                                     <FormLabel>App Idea</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Describe the app idea you're looking for..." {...field} />
+                                        <Input placeholder="Describe the app idea you're looking for..." {...field} className="bg-background/80" />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -82,7 +82,7 @@ export default function InquiryModule() {
                                 <FormLabel>Which App Kit are you interested in?</FormLabel>
                                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                                     <FormControl>
-                                    <SelectTrigger>
+                                    <SelectTrigger className="bg-background/80">
                                         <SelectValue placeholder="Select an app idea..." />
                                     </SelectTrigger>
                                     </FormControl>
@@ -106,7 +106,7 @@ export default function InquiryModule() {
                                 <FormControl>
                                 <Textarea
                                     placeholder="Tell us more about your project..."
-                                    className="resize-none"
+                                    className="resize-none bg-background/80"
                                     {...field}
                                 />
                                 </FormControl>
@@ -118,7 +118,7 @@ export default function InquiryModule() {
                         <p className="text-xs text-muted-foreground text-center sm:text-left">
                             No sign-up needed. Your inquiry will be sent directly to our team.
                         </p>
-                        <Button type="submit" className="w-full sm:w-auto font-bold bg-gradient-primary text-primary-foreground animate-gradient">
+                        <Button type="submit" className="w-full sm:w-auto font-bold bg-gradient-accent text-accent-foreground animate-gradient">
                             Send Inquiry <Rocket className="ml-2 h-4 w-4" />
                         </Button>
                     </div>

@@ -1,6 +1,5 @@
 import { sampleGalleryData } from "@/lib/data";
-import { ArrowUpRight, TrendingUp } from "lucide-react";
-import { Badge } from "./ui/badge";
+import { TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const SamplesGallery = () => {
@@ -13,12 +12,12 @@ const SamplesGallery = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[350px]">
                 {sampleGalleryData.map((sample) => (
                     <div key={sample.id} className={`${sample.style} group relative`}>
-                        <div className="absolute -inset-px bg-gradient-to-br from-primary via-purple-500 to-pink-500 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient"></div>
+                        <div className="absolute -inset-px bg-gradient-accent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient"></div>
                         <Card className="relative h-full w-full overflow-hidden bg-card/60 backdrop-blur-lg border-border/20 shadow-lg flex flex-col justify-between transition-all duration-300 group-hover:bg-card/80">
                             <CardHeader>
                                 <div className="flex justify-between items-start">
-                                    <CardTitle className="text-xl font-bold font-headline">{sample.name}</CardTitle>
-                                    <div className="flex items-center gap-2 text-primary font-bold">
+                                    <CardTitle className="text-xl font-bold font-headline text-primary-foreground">{sample.name}</CardTitle>
+                                    <div className="flex items-center gap-2 text-accent font-bold">
                                         <TrendingUp className="h-5 w-5"/>
                                         <span>{sample.score}</span>
                                     </div>

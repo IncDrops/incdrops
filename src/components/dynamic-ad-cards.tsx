@@ -9,7 +9,7 @@ import { Badge } from "./ui/badge";
 
 const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group overflow-hidden rounded-2xl">
-        <div className="absolute -inset-1 bg-gradient-to-br from-primary via-purple-500 to-pink-500 blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
+        <div className="absolute -inset-1 bg-gradient-accent blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
         <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col justify-between border border-border/20">
             <div>
                 <Badge variant="secondary" className="mb-4">{ad.industry}</Badge>
@@ -24,7 +24,7 @@ const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
                 </div>
                 <p className="text-foreground/80 mb-4">{ad.content}</p>
             </div>
-            <Button asChild className="w-full font-bold">
+            <Button asChild className="w-full font-bold bg-accent text-accent-foreground">
                 <a href={ad.link} target="_blank" rel="noopener noreferrer">
                     {ad.ctaText}
                     <ArrowUpRight className="ml-2 h-4 w-4" />
