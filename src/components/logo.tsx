@@ -3,7 +3,7 @@ import * as React from 'react';
 const Logo = ({ className }: { className?: string }) => (
   <svg
     className={className}
-    viewBox="0 0 150 30"
+    viewBox="0 0 140 30"
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
@@ -20,7 +20,7 @@ const Logo = ({ className }: { className?: string }) => (
       fontWeight="bold"
       fill="url(#metallic-gradient)"
     >
-      TrendSeer
+      IncDrops
     </text>
   </svg>
 );

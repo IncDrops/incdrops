@@ -15,12 +15,12 @@ export default function Home() {
       <HeaderSection />
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="pt-12 space-y-24 md:space-y-32">
+        <div className="pt-24 space-y-24 md:space-y-32">
           <CuratedTrends />
           <SamplesGallery />
-          <InquiryModule />
           <DynamicAdCards />
           <BlogSection />
+          <InquiryModule />
         </div>
       </main>
 
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Separator />
           <div className="text-center py-8 text-muted-foreground">
-            © {new Date().getFullYear()} TrendSeer by IncDrops.com. All rights reserved.
+            © {new Date().getFullYear()} IncDrops.com. All rights reserved.
           </div>
         </div>
       </footer>

@@ -14,7 +14,7 @@ const HeaderSection = () => {
                     </h1>
                 </div>
                 <Button className="font-bold bg-gradient-accent text-accent-foreground animate-gradient">
-                    Ask WillItTrend's AI
+                    Ask IncDrops's AI
                 </Button>
             </div>
             <div className="container mx-auto text-center pb-4 px-4 sm:px-6 lg:px-8">

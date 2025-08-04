@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'TrendSeer by IncDrops.com',
+  title: 'IncDrops',
   description: 'Get instant, AI-powered trend forecasts for ideas, hashtags, products, memes, and more.',
 };
 
