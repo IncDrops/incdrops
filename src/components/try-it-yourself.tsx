@@ -103,24 +103,30 @@ export default function TryItYourself() {
                         </AlertDialogHeader>
                         <AlertDialogFooter>
                         <AlertDialogCancel>Cancel</AlertDialogCancel>
-                        <AlertDialogAction onClick={handleCheckout}>
-                            Confirm & Pay $5.00
+                        <AlertDialogAction onClick={handleCheckout} disabled={isPending}>
+                            {isPending ? 'Processing...' : 'Confirm & Pay $5.00'}
                         </AlertDialogAction>
                         </AlertDialogFooter>
                     </AlertDialogContent>
                 </AlertDialog>
             </div>
 
-            {(report || isGenerating) && !isPending && (
+            {(isGenerating || report) && (
               <div className="mt-8">
                 <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg animate-in fade-in">
                   <CardContent className="p-6">
-                    {isGenerating && !report && <div className="flex items-center justify-center"><LoaderCircle className="h-6 w-6 animate-spin mr-2" /> <p>Generating your report...</p></div>}
-                    {report && (
-                        <>
-                        <p className="font-bold font-headline text-lg text-accent">Report for: "{query}"</p>
-                        <p className="mt-2 text-foreground/80">{report}</p>
-                        </>
+                    {isGenerating && !report ? (
+                        <div className="flex items-center justify-center">
+                            <LoaderCircle className="h-6 w-6 animate-spin mr-2" /> 
+                            <p>Generating your report after payment...</p>
+                        </div>
+                    ) : (
+                        report && (
+                            <>
+                            <p className="font-bold font-headline text-lg text-accent">Report for: "{query}"</p>
+                            <p className="mt-2 text-foreground/80">{report}</p>
+                            </>
+                        )
                     )}
                   </CardContent>
                 </Card>

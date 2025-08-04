@@ -20,7 +20,7 @@ export async function getTrendReport(query: string) {
   }
 }
 
-export async function createCheckoutSession(query: string): Promise<{id: string}> {
+export async function createCheckoutSession(query: string) {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
@@ -41,5 +41,5 @@ export async function createCheckoutSession(query: string): Promise<{id: string}
     cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/`,
   });
 
-  return redirect(session.url!);
+  redirect(session.url!);
 }
