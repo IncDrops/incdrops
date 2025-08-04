@@ -5,6 +5,7 @@ import CuratedTrends from '@/components/curated-trends';
 import DynamicAdCards from '@/components/dynamic-ad-cards';
 import BlogSection from '@/components/blog-section';
 import { Separator } from '@/components/ui/separator';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,17 +19,21 @@ export default function Home() {
         <div className="pt-24 space-y-24 md:space-y-32">
           <CuratedTrends />
           <SamplesGallery />
+          <InquiryModule />
           <DynamicAdCards />
           <BlogSection />
-          <InquiryModule />
         </div>
       </main>
 
       <footer className="w-full mt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Separator />
-          <div className="text-center py-8 text-muted-foreground">
-            © {new Date().getFullYear()} IncDrops.com. All rights reserved.
+          <div className="flex flex-col sm:flex-row justify-between items-center py-8 text-muted-foreground text-sm">
+            <span>© {new Date().getFullYear()} IncDrops.com. All rights reserved.</span>
+            <div className="flex gap-4 mt-4 sm:mt-0">
+                <Link href="/terms" className="hover:text-accent transition-colors">Terms of Use</Link>
+                <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
+            </div>
           </div>
         </div>
       </footer>
