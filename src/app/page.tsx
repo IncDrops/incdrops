@@ -15,12 +15,10 @@ export default function Home() {
       <HeaderSection />
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="sticky top-[73px] z-30 py-4 -mx-4 px-4 bg-background/80 backdrop-blur-lg">
-          <InquiryModule />
-        </div>
         <div className="pt-12 space-y-24 md:space-y-32">
-          <SamplesGallery />
           <CuratedTrends />
+          <SamplesGallery />
+          <InquiryModule />
           <DynamicAdCards />
           <BlogSection />
         </div>
