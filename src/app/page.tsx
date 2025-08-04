@@ -6,6 +6,7 @@ import DynamicAdCards from '@/components/dynamic-ad-cards';
 import BlogSection from '@/components/blog-section';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
+import TryItYourself from '@/components/try-it-yourself';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="pt-24 space-y-24 md:space-y-32">
+          <TryItYourself />
           <CuratedTrends />
           <SamplesGallery />
           <InquiryModule />
