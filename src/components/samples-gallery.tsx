@@ -9,7 +9,7 @@ const SamplesGallery = () => {
                 <h2 className="text-3xl font-bold font-headline tracking-tight">How It Works</h2>
                 <p className="text-muted-foreground mt-2">Explore pre-defined examples of our app kits and trend analysis.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[350px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                 {sampleGalleryData.map((sample) => (
                     <div key={sample.id} className={`${sample.style} group relative`}>
                         <div className="absolute -inset-px bg-gradient-accent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient"></div>

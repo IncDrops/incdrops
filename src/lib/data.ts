@@ -1,3 +1,4 @@
+
 export const appIdeas = [
     "AI-Powered Personal Stylist",
     "Gamified Language Learning App",
@@ -29,7 +30,7 @@ export const sampleGalleryData = [
         query: "sustainable packaging startups",
         score: 88,
         rationale: "Rising consumer awareness and corporate responsibility are driving a massive shift towards sustainable alternatives. Innovations in biodegradable and compostable materials are seeing significant VC funding and search interest.",
-        style: "md:row-span-2"
+        style: ""
     },
     {
         id: 2,
@@ -37,7 +38,7 @@ export const sampleGalleryData = [
         query: "glucose monitoring smart watch",
         score: 95,
         rationale: "The convergence of healthcare and consumer tech is a dominant trend. Non-invasive monitoring is the next frontier, with major tech players and startups racing to crack the market. Social media buzz is exceptionally high.",
-        style: "md:col-span-2 md:row-span-2"
+        style: ""
     },
     {
         id: 3,
@@ -61,7 +62,15 @@ export const sampleGalleryData = [
         query: "neighborhood community app",
         score: 68,
         rationale: "While large social networks dominate, there's a counter-trend towards smaller, more intimate community platforms. Focus on privacy and local events is showing steady growth in app stores.",
-        style: "md:col-span-2"
+        style: ""
+    },
+    {
+        id: 6,
+        name: "Creator Economy Tools",
+        query: "tools for content creators",
+        score: 91,
+        rationale: "As the creator economy matures, demand for tools that streamline content creation, monetization, and audience management is skyrocketing. This B2B market has strong growth signals.",
+        style: ""
     }
 ];
 
