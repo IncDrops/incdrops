@@ -9,7 +9,7 @@ import Link from "next/link";
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
     return (
         <Card className="min-w-[300px] sm:min-w-[350px] flex-shrink-0 snap-start bg-card/60 backdrop-blur-lg border-border/20 shadow-lg h-full flex flex-col overflow-hidden group">
-            <div className="relative aspect-[3/4] w-full overflow-hidden">
+            <div className="relative aspect-square w-full overflow-hidden">
                 <Image
                     src={post.images[0]}
                     alt={post.title}

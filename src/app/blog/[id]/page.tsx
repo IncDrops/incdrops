@@ -28,7 +28,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {post.images.map((image, index) => (
-                <div key={index} className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden shadow-lg">
+                <div key={index} className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-lg">
                     <Image
                         src={image}
                         alt={`${post.title} - image ${index + 1}`}
