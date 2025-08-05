@@ -7,7 +7,9 @@ const SamplesGallery = () => {
         <section>
             <div className="mb-8">
                 <h2 className="text-3xl font-bold font-headline tracking-tight">How It Works</h2>
-                <p className="text-muted-foreground mt-2">Explore pre-defined examples of our app kits and trend analysis.</p>
+                <p className="text-muted-foreground mt-2 max-w-3xl">
+                    Explore pre-defined examples of our trend analysis to see how trends emerge and where they're headed. Then, use our AI to forecast your own idea or select a pre-built app kit. When you're ready, send us an inquiry, and we can build your app—or simply use our insights to inspire your own project.
+                </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                 {sampleGalleryData.map((sample) => (
