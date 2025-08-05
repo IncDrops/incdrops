@@ -30,7 +30,7 @@ export const sampleGalleryData = [
         query: "sustainable packaging startups",
         score: 88,
         rationale: "Rising consumer awareness and corporate responsibility are driving a massive shift towards sustainable alternatives. Innovations in biodegradable and compostable materials are seeing significant VC funding and search interest.",
-        style: ""
+        style: "lg:col-span-2"
     },
     {
         id: 2,
@@ -54,7 +54,7 @@ export const sampleGalleryData = [
         query: "AI recipe generator app",
         score: 82,
         rationale: "Smart home integration is moving into the kitchen. AI's ability to create recipes based on available ingredients and dietary needs is a compelling use case with growing search volume and media mentions.",
-        style: ""
+        style: "lg:col-span-2"
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ export const sampleGalleryData = [
         query: "neighborhood community app",
         score: 68,
         rationale: "While large social networks dominate, there's a counter-trend towards smaller, more intimate community platforms. Focus on privacy and local events is showing steady growth in app stores.",
-        style: ""
+        style: "lg:col-span-3"
     },
     {
         id: 6,
@@ -135,7 +135,6 @@ export const blogPosts = [
       <p>The first step is to stay informed. Set up alerts for trending topics and use tools that can predict emerging hashtags. But don't just jump on every trend. Look for those that align with your niche or brand values. Once you've identified a promising hashtag, create content that is not only relevant but also adds a unique perspective. Timing is everything, so have your content ready to go.</p>
       <p>The most successful creators are the ones who are ready to act in an instant. This means having your content creation toolkit prepared and at your fingertips.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
-      <p>To be ready for the next big thing, you'll need the right tools to create professional, engaging content quickly. We recommend a high-quality smartphone camera lens to capture stunning visuals, a portable studio light for perfect lighting on the go, and a reliable portable SSD to store and transfer your media files instantly.</p>
       <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4ollPJQ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">APEXEL 6X Telephoto Lens & 150mm Macro Lens</a>
         <a href="https://amzn.to/46FaG07" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Skytex Softbox Lighting Kit(2Pack), 20x28in Soft Box</a>
@@ -738,3 +737,4 @@ export const blogPosts = [
 ];
 
     
+
