@@ -26,18 +26,22 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <Badge variant="secondary">{post.tag}</Badge>
             <h1 className="text-4xl font-bold font-headline tracking-tight mt-2">{post.title}</h1>
           </div>
-          <div className="relative aspect-video w-full rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <Image
-                src={post.image}
-                alt={post.title}
-                fill
-                className="object-cover"
-                data-ai-hint={post['data-ai-hint']}
-                priority
-            />
+          <div className="space-y-8">
+            {post.images.map((image, index) => (
+                <div key={index} className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg">
+                    <Image
+                        src={image}
+                        alt={`${post.title} - image ${index + 1}`}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={post['data-ai-hint']}
+                        priority={index === 0}
+                    />
+                </div>
+            ))}
           </div>
           <div
-            className="prose prose-lg dark:prose-invert max-w-none text-foreground/80 space-y-4"
+            className="prose prose-lg dark:prose-invert max-w-none text-foreground/80 space-y-4 mt-8"
             dangerouslySetInnerHTML={{ __html: post.fullContent }}
           />
         </article>

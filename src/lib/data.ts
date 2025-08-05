@@ -78,7 +78,7 @@ export const adCardsData = [
   {
     id: 1,
     industry: "Automobile",
-    image: "https://placehold.co/600x400",
+    image: "https://placehold.co/600x400.png",
     "data-ai-hint": "electric car",
     ctaText: "Explore Future Mobility",
     link: "#",
@@ -87,7 +87,7 @@ export const adCardsData = [
   {
     id: 2,
     industry: "Tech",
-    image: "https://placehold.co/600x400",
+    image: "https://placehold.co/600x400.png",
     "data-ai-hint": "futuristic laptop",
     ctaText: "Upgrade Your Workflow",
     link: "#",
@@ -96,7 +96,7 @@ export const adCardsData = [
   {
     id: 3,
     industry: "Mobile Smart Devices",
-    image: "https://placehold.co/600x400",
+    image: "https://placehold.co/600x400.png",
     "data-ai-hint": "smartphone concept",
     ctaText: "Experience the Next Generation",
     link: "#",
@@ -105,7 +105,7 @@ export const adCardsData = [
   {
     id: 4,
     industry: "Software",
-    image: "https://placehold.co/600x400",
+    image: "https://placehold.co/600x400.png",
     "data-ai-hint": "code software",
     ctaText: "Build Without Limits",
     link: "#",
@@ -114,7 +114,7 @@ export const adCardsData = [
   {
     id: 5,
     industry: "Finance/Fintech",
-    image: "https://placehold.co/600x400",
+    image: "https://placehold.co/600x400.png",
     "data-ai-hint": "digital finance",
     ctaText: "Invest Smarter",
     link: "#",
@@ -127,7 +127,7 @@ export const blogPosts = [
     id: 1,
     title: "Ride the Wave: How to Profit from the Next Social Media Hashtag Boom",
     summary: "Every so often, a hashtag explodes into a cultural phenomenon. For a savvy marketer or creator, this isn't just a trend to watch—it's an opportunity to profit.",
-    image: "/blog/blog-1.jpg",
+    images: ["/blog/blog-1.jpg", "/blog/blog-1-2.jpg", "/blog/blog-1-3.jpg"],
     "data-ai-hint": "social media trends",
     tag: "Social Media",
     fullContent: `
@@ -147,7 +147,7 @@ export const blogPosts = [
     id: 2,
     title: "Future-Proof Your Life: The Best Gadgets for Early Adopters in 2025",
     summary: "The world of technology moves at a dizzying pace. For those who love to be on the cutting edge, keeping up with the latest and greatest gadgets is a passion.",
-    image: "/blog/blog-2.jpg",
+    images: ["/blog/blog-2.jpg", "/blog/blog-2-2.jpg", "/blog/blog-2-3.jpg"],
     "data-ai-hint": "futuristic gadgets",
     tag: "Gadgets",
     fullContent: `
@@ -167,7 +167,7 @@ export const blogPosts = [
     id: 3,
     title: "The Crystal Ball: How AI Trend Forecasting Tools Give Marketers an Edge",
     summary: "The most successful marketers don't guess—they use data to predict. This is where AI trend forecasting tools come in, giving you a clear, data-driven look into the future.",
-    image: "/blog/blog-3.jpg",
+    images: ["/blog/blog-3.jpg", "/blog/blog-3-2.jpg"],
     "data-ai-hint": "ai marketing analytics",
     tag: "AI & Marketing",
     fullContent: `
@@ -186,7 +186,7 @@ export const blogPosts = [
     id: 4,
     title: "The Ultimate Guide: Finding and Riding the Next Viral Hashtag",
     summary: "Finding the next trending hashtag is a skill, and it's one that can seriously boost your visibility and reach. It's less about luck and more about having a system.",
-    image: "/blog/blog-4.jpg",
+    images: ["/blog/blog-4.jpg", "/blog/blog-4-2.jpg"],
     "data-ai-hint": "viral marketing strategy",
     tag: "Social Media",
     fullContent: `
@@ -206,7 +206,7 @@ export const blogPosts = [
     id: 5,
     title: "Beyond the Hashtag: How to Build an Engaged Community from a Viral Moment",
     summary: "In the fast-paced world of social media, your content has just a few seconds to make an impression. The right visuals are no longer a luxury—they're a necessity.",
-    image: "/blog/blog-5.jpg",
+    images: ["/blog/blog-5.jpg", "/blog/blog-5-2.jpg"],
     "data-ai-hint": "online community building",
     tag: "Content Strategy",
     fullContent: `
@@ -225,7 +225,7 @@ export const blogPosts = [
     id: 6,
     title: "Stop the Scroll: How to Create Standout Content for Any Hashtag",
     summary: "In the fast-paced world of social media, your content has just a few seconds to make an impression. The right visuals are no longer a luxury—they're a necessity.",
-    image: "/blog/blog-6.jpg",
+    images: ["/blog/blog-6.jpg", "/blog/blog-6-2.jpg", "/blog/blog-6-3.jpg"],
     "data-ai-hint": "scroll-stopping content creation",
     tag: "Content Strategy",
     fullContent: `
@@ -245,7 +245,7 @@ export const blogPosts = [
     id: 7,
     title: "The Creator's Toolkit: Must-Have Gadgets for Social Media Success",
     summary: "Creating compelling content for social media is about more than just having a good idea. It's about execution.",
-    image: "/blog/blog-7.jpg",
+    images: ["/blog/blog-7.jpg", "/blog/blog-7-2.jpg", "/blog/blog-7-3.jpg"],
     "data-ai-hint": "social media creator tools",
     tag: "Gadgets",
     fullContent: `
@@ -265,7 +265,7 @@ export const blogPosts = [
     id: 8,
     title: "The Workflow for Virality: From Idea to Viral Hit",
     summary: "Have you ever wondered about the process behind a piece of content that goes viral? It's rarely a stroke of luck. Instead, it's often the result of a deliberate and efficient workflow.",
-    image: "/blog/blog-8.jpg",
+    images: ["/blog/blog-8.jpg", "/blog/blog-8-2.jpg", "/blog/blog-8-3.jpg"],
     "data-ai-hint": "content creation workflow",
     tag: "Content Strategy",
     fullContent: `
@@ -285,7 +285,7 @@ export const blogPosts = [
     id: 9,
     title: "From Passion to Profit: A Guide to Monetizing Your Influence",
     summary: "So you've built a following. The next step is to turn that influence into income. Affiliate marketing and sponsored posts are two primary ways to do this.",
-    image: "/blog/blog-9.jpg",
+    images: ["/blog/blog-9.jpg", "/blog/blog-9-2.jpg", "/blog/blog-9-3.jpg"],
     "data-ai-hint": "influencer monetization",
     tag: "Monetization",
     fullContent: `
@@ -305,7 +305,7 @@ export const blogPosts = [
     id: 10,
     title: "Hashtag Hijacking: The Do's and Don'ts of Riding a Trend",
     summary: "In the world of social media, 'hashtag hijacking' is the practice of using a popular or trending hashtag to gain visibility for your own content.",
-    image: "/blog/blog-10.jpg",
+    images: ["/blog/blog-10.jpg"],
     "data-ai-hint": "hashtag marketing ethics",
     tag: "Social Media",
     fullContent: `
@@ -324,7 +324,7 @@ export const blogPosts = [
     id: 11,
     title: "Master Your Time: 5 Essential Social Media Scheduling Tools",
     summary: "For any content creator or marketer, managing multiple social media accounts can feel like a full-time job. The secret to staying on top of it all isn't working harder; it's working smarter.",
-    image: "/blog/blog-11.jpg",
+    images: ["/blog/blog-11.jpg", "/blog/blog-11-2.jpg"],
     "data-ai-hint": "social media scheduling",
     tag: "Content Strategy",
     fullContent: `
@@ -344,7 +344,7 @@ export const blogPosts = [
     id: 12,
     title: "The Future Is Here: Must-Have Smart Home Gadgets of 2025",
     summary: "The smart home of the future isn't just about turning on lights with your phone; it's an integrated ecosystem that learns your habits, saves you money, and simplifies daily life.",
-    image: "/blog/blog-12.jpg",
+    images: ["/blog/blog-12.jpg", "/blog/blog-12-2.jpg", "/blog/blog-12-3.jpg"],
     "data-ai-hint": "smart home automation",
     tag: "Gadgets",
     fullContent: `
@@ -364,7 +364,7 @@ export const blogPosts = [
     id: 13,
     title: "Beyond the Wrist: Next-Gen Wearables Are Defining the Future of Health",
     summary: "Smartwatches and fitness trackers have been a staple for years, but the latest generation is completely redefining what it means to monitor your health.",
-    image: "/blog/blog-13.jpg",
+    images: ["/blog/blog-13.jpg", "/blog/blog-13-2.jpg", "/blog/blog-13-3.jpg"],
     "data-ai-hint": "wearable health technology",
     tag: "Gadgets",
     fullContent: `
@@ -384,7 +384,7 @@ export const blogPosts = [
     id: 14,
     title: "The World in Your Hands: Top Portable Gaming Gadgets for 2025",
     summary: "The days of being tethered to a console are long gone. The future of gaming is portable, and the latest wave of portable gaming gadgets is more powerful than ever.",
-    image: "/blog/blog-14.jpg",
+    images: ["/blog/blog-14.jpg", "/blog/blog-14-2.jpg", "/blog/blog-14-3.jpg", "/blog/blog-14-4.jpg"],
     "data-ai-hint": "portable gaming consoles",
     tag: "Gadgets",
     fullContent: `
@@ -404,7 +404,7 @@ export const blogPosts = [
     id: 15,
     title: "Unlock Your Potential: Gadgets to Supercharge Your Productivity in 2025",
     summary: "The modern professional workspace is no longer confined to a single office or desk. Staying productive requires a set of tools that can keep up with your dynamic lifestyle.",
-    image: "/blog/blog-15.jpg",
+    images: ["/blog/blog-15.jpg", "/blog/blog-15-2.jpg", "/blog/blog-15-3.jpg"],
     "data-ai-hint": "work productivity gadgets",
     tag: "Gadgets",
     fullContent: `
@@ -424,7 +424,7 @@ export const blogPosts = [
     id: 16,
     title: "The Surprise Upgrades: 5 Innovative Gadgets You Didn't Know You Needed",
     summary: "We all know about the latest smartphone and smartwatch, but what about the ingenious gadgets that fly under the radar?",
-    image: "/blog/blog-16.jpg",
+    images: ["/blog/blog-16.jpg", "/blog/blog-16-2.jpg", "/blog/blog-16-3.jpg"],
     "data-ai-hint": "innovative tech gadgets",
     tag: "Gadgets",
     fullContent: `
@@ -444,7 +444,7 @@ export const blogPosts = [
     id: 17,
     title: "Travel Smart: The Best Gadgets for the Modern Digital Nomad",
     summary: "Being a digital nomad means having the freedom to work from anywhere in the world. But that freedom comes with a need for a reliable, portable, and powerful tech setup.",
-    image: "/blog/blog-17.jpg",
+    images: ["/blog/blog-17.jpg", "/blog/blog-17-2.jpg", "/blog/blog-17-3.jpg"],
     "data-ai-hint": "digital nomad gear",
     tag: "Gadgets",
     fullContent: `
@@ -464,7 +464,7 @@ export const blogPosts = [
     id: 18,
     title: "Green Gadgets: Sustainable Tech for a Greener Lifestyle",
     summary: "As our lives become more dependent on technology, so does the need to make more environmentally conscious choices.",
-    image: "/blog/blog-18.jpg",
+    images: ["/blog/blog-18.jpg", "/blog/blog-18-2.jpg", "/blog/blog-18-3.jpg"],
     "data-ai-hint": "sustainable technology",
     tag: "Gadgets",
     fullContent: `
@@ -484,7 +484,7 @@ export const blogPosts = [
     id: 19,
     title: "The Verdict Is In: Is the New Apple Watch Ultra Worth the Hype?",
     summary: "Every year, a handful of gadgets generate massive excitement before they even hit the shelves. Does the new Apple Watch Ultra live up to the expectations?",
-    image: "/blog/blog-19.jpg",
+    images: ["/blog/blog-19.jpg", "/blog/blog-19-2.jpg", "/blog/blog-19-3.jpg"],
     "data-ai-hint": "apple watch review",
     tag: "Gadgets",
     fullContent: `
@@ -504,7 +504,7 @@ export const blogPosts = [
     id: 20,
     title: "The Perfect Pairing: Essential Accessories for the Newest Smartphones and Laptops",
     summary: "You just got a brand new smartphone or laptop. To truly unlock its full potential, you need the right accessories.",
-    image: "/blog/blog-20.jpg",
+    images: ["/blog/blog-20.jpg", "/blog/blog-20-2.jpg", "/blog/blog-20-3.jpg"],
     "data-ai-hint": "smartphone laptop accessories",
     tag: "Gadgets",
     fullContent: `
@@ -524,7 +524,7 @@ export const blogPosts = [
     id: 21,
     title: "The Ultimate Home Office: Gadgets to Create a Productive Workspace",
     summary: "Your home office should be a place of inspiration, focus, and comfort. A few strategic gadget upgrades can transform a chaotic space into a highly productive environment.",
-    image: "/blog/blog-21.jpg",
+    images: ["/blog/blog-21.jpg", "/blog/blog-21-2.jpg"],
     "data-ai-hint": "home office setup",
     tag: "Gadgets",
     fullContent: `
@@ -544,7 +544,7 @@ export const blogPosts = [
     id: 22,
     title: "The AI Revolution: Why Every Marketer Needs AI-Powered Tools Now",
     summary: "If you're a marketer, you've probably heard the buzz around AI. But this isn't just hype; it's a fundamental shift in how we work.",
-    image: "/blog/blog-22.jpg",
+    images: ["/blog/blog-22.jpg", "/blog/blog-22-2.jpg"],
     "data-ai-hint": "ai marketing tools",
     tag: "AI & Marketing",
     fullContent: `
@@ -563,7 +563,7 @@ export const blogPosts = [
     id: 23,
     title: "Beyond the Surface: 5 AI Tools for Deeper Customer Insights",
     summary: "Google Analytics is a powerful tool, but it only scratches the surface. For marketers who want a truly competitive edge, the next frontier is using AI tools.",
-    image: "/blog/blog-23.jpg",
+    images: ["/blog/blog-23.jpg", "/blog/blog-23-2.jpg"],
     "data-ai-hint": "ai customer analysis",
     tag: "AI & Marketing",
     fullContent: `
@@ -582,7 +582,7 @@ export const blogPosts = [
     id: 24,
     title: "The Future of Marketing: A Marketer's Guide to Predictive Analytics 101",
     summary: "What if you could know what your customers were going to buy before they even knew it themselves? That's the promise of predictive analytics.",
-    image: "/blog/blog-24.jpg",
+    images: ["/blog/blog-24.jpg", "/blog/blog-24-2.jpg", "/blog/blog-24-3.jpg"],
     "data-ai-hint": "predictive marketing analytics",
     tag: "AI & Marketing",
     fullContent: `
@@ -602,7 +602,7 @@ export const blogPosts = [
     id: 25,
     title: "Content That Writes Itself? The Best AI Writing Tools for Creators",
     summary: "Writer's block is a universal struggle. But what if you had a partner that could help you brainstorm ideas, generate drafts, and even optimize your copy?",
-    image: "/blog/blog-25.jpg",
+    images: ["/blog/blog-25.jpg", "/blog/blog-25-2.jpg"],
     "data-ai-hint": "ai content generation",
     tag: "AI & Marketing",
     fullContent: `
@@ -621,7 +621,7 @@ export const blogPosts = [
     id: 26,
     title: "The Future is Here: AI-Driven SEO for Keyword Research and Optimization",
     summary: "SEO used to be a game of guesswork and tedious manual labor. But with the rise of AI, the future of SEO is smarter, faster, and more effective than ever.",
-    image: "/blog/blog-26.jpg",
+    images: ["/blog/blog-26.jpg", "/blog/blog-26-2.jpg"],
     "data-ai-hint": "ai seo optimization",
     tag: "AI & Marketing",
     fullContent: `
@@ -640,7 +640,7 @@ export const blogPosts = [
     id: 27,
     title: "The E-commerce Crystal Ball: How AI Predicts Bestsellers and Optimizes Inventory",
     summary: "In the fast-paced world of e-commerce, anticipating what customers will buy next is the ultimate challenge. AI can help.",
-    image: "/blog/blog-27.jpg",
+    images: ["/blog/blog-27.jpg", "/blog/blog-27-2.jpg", "/blog/blog-27-3.jpg"],
     "data-ai-hint": "ai ecommerce inventory",
     tag: "AI & Marketing",
     fullContent: `
@@ -660,7 +660,7 @@ export const blogPosts = [
     id: 28,
     title: "Stay Ahead of the Curve: The Ultimate List of AI Trend Forecasting Tools for 2025",
     summary: "The ability to predict trends is no longer a luxury—it's a necessity for any business that wants to stay relevant.",
-    image: "/blog/blog-28.jpg",
+    images: ["/blog/blog-28.jpg", "/blog/blog-28-2.jpg"],
     "data-ai-hint": "ai trend forecasting",
     tag: "AI & Marketing",
     fullContent: `
@@ -679,7 +679,7 @@ export const blogPosts = [
     id: 29,
     title: "Work Smarter, Not Harder: AI Tools to Streamline Your Marketing Workflow",
     summary: "In the world of marketing, time is money. Repetitive tasks like social media scheduling, email personalization, and data analysis can eat up hours of your day.",
-    image: "/blog/blog-29.jpg",
+    images: ["/blog/blog-29.jpg", "/blog/blog-29-2.jpg", "/blog/blog-29-3.jpg"],
     "data-ai-hint": "marketing automation ai",
     tag: "AI & Marketing",
     fullContent: `
@@ -699,7 +699,7 @@ export const blogPosts = [
     id: 30,
     title: "The Human Touch: Using Ethical AI in Marketing",
     summary: "As AI becomes more integrated into our marketing efforts, a new question arises: how do we use it responsibly and ethically?",
-    image: "/blog/blog-30.jpg",
+    images: ["/blog/blog-30.jpg", "/blog/blog-30-2.jpg"],
     "data-ai-hint": "ethical ai marketing",
     tag: "AI & Marketing",
     fullContent: `
@@ -719,7 +719,7 @@ export const blogPosts = [
     id: 31,
     title: "From Data to Dollars: Using AI to Personalize Customer Experiences",
     summary: "In a world saturated with generic ads and one-size-fits-all content, the ultimate way to stand out is with personalization. AI can help.",
-    image: "/blog/blog-31.jpg",
+    images: ["/blog/blog-31.jpg", "/blog/blog-31-2.jpg", "/blog/blog-31-3.jpg"],
     "data-ai-hint": "ai personalized marketing",
     tag: "AI & Marketing",
     fullContent: `
