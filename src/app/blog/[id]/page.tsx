@@ -5,29 +5,6 @@ import HeaderSection from '@/components/header-section';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
-import { generateImage } from '@/ai/flows/generate-image';
-import { Suspense } from 'react';
-import { LoaderCircle } from 'lucide-react';
-
-const GeneratedImage = async ({ post }: { post: typeof blogPosts[0] }) => {
-    const { imageUrl } = await generateImage({ prompt: post['data-ai-hint'] });
-    return (
-        <Image
-            src={imageUrl}
-            alt={post.title}
-            fill
-            className="object-cover"
-            priority
-        />
-    )
-}
-
-const ImagePlaceholder = () => (
-    <div className="w-full h-full bg-muted flex items-center justify-center">
-        <LoaderCircle className="animate-spin text-muted-foreground" />
-    </div>
-)
-
 
 export default function BlogPostPage({ params }: { params: { id: string } }) {
   const post = blogPosts.find((p) => p.id.toString() === params.id);
@@ -50,9 +27,14 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <h1 className="text-4xl font-bold font-headline tracking-tight mt-2">{post.title}</h1>
           </div>
           <div className="relative aspect-video w-full rounded-2xl overflow-hidden mb-8 shadow-lg">
-            <Suspense fallback={<ImagePlaceholder />}>
-              <GeneratedImage post={post} />
-            </Suspense>
+            <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                data-ai-hint={post['data-ai-hint']}
+                priority
+            />
           </div>
           <div
             className="prose prose-lg dark:prose-invert max-w-none text-foreground/80 space-y-4"
