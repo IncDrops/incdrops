@@ -136,7 +136,7 @@ export const blogPosts = [
       <p>The most successful creators are the ones who are ready to act in an instant. This means having your content creation toolkit prepared and at your fingertips.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To be ready for the next big thing, you'll need the right tools to create professional, engaging content quickly. We recommend a high-quality smartphone camera lens to capture stunning visuals, a portable studio light for perfect lighting on the go, and a reliable portable SSD to store and transfer your media files instantly.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4ollPJQ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">APEXEL 6X Telephoto Lens & 150mm Macro Lens</a>
         <a href="https://amzn.to/46FaG07" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Skytex Softbox Lighting Kit(2Pack), 20x28in Soft Box</a>
         <a href="https://amzn.to/4mL6MHV" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung T5 EVO Portable SSD 8TB</a>
@@ -156,7 +156,7 @@ export const blogPosts = [
       <p>Whether you're looking to upgrade your home office or your daily commute, a smart gadget can make all the difference. Investing in these items now means you'll be ahead of the curve and get the most out of what technology has to offer.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started with the best of 2025, you'll want to check out the latest in wireless noise-canceling headphones for focus, a smart notebook that digitizes your handwritten notes, and a versatile charging station to power all your new devices.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45xbaUN" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Sony WH-1000XM6 The Best Wireless Noise Canceling Headphones</a>
         <a href="https://amzn.to/4lebYTg" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple iPad Pro 11-Inch (M4): Built for Apple Intelligence</a>
         <a href="https://amzn.to/47chrqc" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">acer 7-in-1 Wireless Charging Station</a>
@@ -176,7 +176,7 @@ export const blogPosts = [
        <p>Instead of reacting to trends, you'll be able to create them. Using these tools allows you to position yourself as an industry leader by consistently providing content and products that your audience is actively seeking, often before they even know they want it.</p>
        <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To start harnessing the power of AI, you'll need the right setup. We recommend a high-performance laptop that can handle data-intensive tasks, a large-screen monitor for a better view of your analytics dashboards, and a book on data-driven marketing to understand the principles behind these powerful tools.</p>
-       <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+       <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/40P6PKd" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung 49" Odyssey OLED (G93SC) Series Curved Gaming Monitor</a>
         <a href="https://amzn.to/4m2RyxU" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Mastering the Data Paradox: Key to Winning in the AI Age</a>
       </div>
@@ -195,7 +195,7 @@ export const blogPosts = [
       <p>Once you’ve found a potential viral hashtag, the key is to create content that adds real value. Don't just jump on the trend—contribute something original and compelling. Whether it's a unique perspective, a humorous take, or a detailed tutorial, your content needs to stand out. And remember, timing is everything. Get your post out as early as possible to maximize its potential.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To help you get started, we've found a few essential gadgets that can give you a competitive edge. A high-quality ring light will make your videos look professional, while a sturdy phone tripod ensures your content is stable and clean. For deeper insights, consider a book on social media strategy that can help you track the performance of your hashtags.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45g2XTJ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Pixel Ring Light, 19" Bi-Color LCD Display Ring Light with Stand</a>
         <a href="https://amzn.to/3JfQeJf" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Matterport Axis Gimbal Stabilizer</a>
         <a href="https://amzn.to/40Rqitz" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Social Media Marketing Decoded</a>
@@ -215,7 +215,7 @@ export const blogPosts = [
       <p>Next, give them a reason to come back. Use the momentum from your viral post to launch a series of related content. If your hashtag was about a specific topic, create a series of videos, blog posts, or live Q&A sessions that go deeper. This is how you transition from a "one-hit wonder" to an authority figure in your niche.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>Looking for the tools to make this happen? Building a community requires organization and high-quality content. We recommend a high-quality microphone for engaging Q&As and a reliable video editing software. For managing your new followers, a productivity tool like this digital planner can help you keep track of your content calendar and audience interactions.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4m1YECN" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">DJI Mic 2 (2 TX + 1 RX + Charging Case)</a>
         <a href="https://amzn.to/4oi1QeY" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Full Focus Gray Linen Planner by Michael Hyatt</a>
       </div>
@@ -234,7 +234,7 @@ export const blogPosts = [
       <p>Think about the story you want to tell. Does your visual communicate the emotion of the hashtag instantly? Does it pique curiosity? A well-crafted thumbnail or a perfectly timed video clip can make all the difference, turning a simple post into a viral sensation.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To elevate your visuals and capture attention, you don't need a massive budget. A high-quality ring light provides perfect lighting for your videos and photos. An adjustable phone tripod ensures your shots are stable and professional. And a portable external battery will keep your devices charged so you never miss a moment.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4509PWt" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Desk Ring Light with Stand, 10.5''</a>
         <a href="https://amzn.to/45yIYRt" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Amazon Basics Portable and Flexible Tripod</a>
         <a href="https://amzn.to/41kydzF" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Anker Power Bank (PowerCore 10K)</a>
@@ -254,7 +254,7 @@ export const blogPosts = [
       <p>These gadgets aren't just for professional studios. They are affordable, portable, and designed to help you create stunning content right from your phone or laptop. With the right gear, you can take your content from good to great and build a following that truly connects with your message.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To build your ultimate content creator toolkit, we recommend an all-in-one phone photography kit, which often includes a tripod and various lenses. A professional-grade podcast microphone is a must for clear audio, and a miniature portable green screen can make your videos stand out.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/46KTuq5" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">SmallRig x Brandon Li All-in-One Mobile Video Kit</a>
         <a href="https://amzn.to/45ybov0" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Movo Podcast Equipment Bundle</a>
         <a href="https://amzn.to/45gNwKV" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Portable Green Screen Backdrop Kit</a>
@@ -274,7 +274,7 @@ export const blogPosts = [
       <p>The production phase is where your toolkit comes in. Shoot your video or take your photos, keeping your planned narrative in mind. Then, move on to editing, where you fine-tune your content and add a captivating hook. Finally, schedule your post for the optimal time using a social media management tool and engage with your audience once it’s live.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To streamline this process, you need a few core tools. A project management app can help you track your ideas and deadlines. A high-speed external hard drive is perfect for storing large media files, and a dual-monitor setup can make the editing process much faster and more efficient.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4l8x7hG" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">WD 6TB My Passport Portable External Hard Drive</a>
         <a href="https://amzn.to/4mtGUjy" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">VIVO Freestanding Dual Monitor Stand</a>
         <a href="https://amzn.to/4okeeLq" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">80/20 Sales and Marketing: The Definitive Guide</a>
@@ -294,7 +294,7 @@ export const blogPosts = [
       <p>Sponsored posts, on the other hand, involve a brand paying you a flat fee to create content that features their product. This is a more direct form of income but often requires you to have a larger following and a well-defined niche. Both methods require authenticity, so always choose brands and products you truly believe in.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To manage your monetization strategy, you need tools that help you stay organized. A financial planner can help you track your income and expenses. A portable laptop stand can improve your work-from-home comfort, and a high-quality ergonomic mouse can help you avoid fatigue during long hours of content creation and promotion.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45x5H0d" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Clever Fox Budget Planner</a>
         <a href="https://amzn.to/47ceplO" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Nulaxy Telescopic 360 Rotating Laptop Stand</a>
         <a href="https://amzn.to/46AZYYr" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">ProtoArc Ergonomic Mouse</a>
@@ -314,7 +314,7 @@ export const blogPosts = [
       <p>However, a huge don't is to jump on a hashtag that is tied to a tragedy, a sensitive social issue, or an event that has no connection to your brand. This can come across as insensitive and opportunistic, and it will almost certainly backfire. Always do your research before you post.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To make sure your content is on point, a good social media analytics tool can help you gauge the context and sentiment of a hashtag before you use it. A reliable tablet can help you do quick research on the go, and a book on crisis management can help you prepare for the unexpected.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4foIl0j" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Microsoft Surface Pro 11 Bundle</a>
         <a href="https://amzn.to/3Ji4Yaw" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Social Media and Crisis Communication: Second Edition</a>
       </div>
@@ -333,7 +333,7 @@ export const blogPosts = [
       <p>Whether you're a solo creator or part of a marketing team, these tools are a game-changer. They ensure your social presence is consistent, professional, and always active, even when you're away from your desk.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To streamline your social media workflow, a few key products can make a huge difference. A reliable tablet is perfect for on-the-go content planning, a comfortable ergonomic mouse can prevent hand strain during long planning sessions, and a book on social media marketing automation can help you master these tools.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4ooHmBu" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple iPad Pro 13-Inch (M4): Built for Apple Intelligence</a>
         <a href="https://amzn.to/4flRg2C" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Logitech Lift Vertical Ergonomic Mouse</a>
         <a href="https://amzn.to/4lYmjDV" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Social Media AI Agents for Beginners</a>
@@ -353,7 +353,7 @@ export const blogPosts = [
       <p>But it's not all serious business. The kitchen is also getting a major upgrade. We're seeing smart appliances that can automatically start your coffee maker as soon as your alarm goes off or a smart fridge that helps you track your groceries. These innovations are designed to give you back your time and make your life more seamless.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To start building your own smart ecosystem, you'll need the right foundation. We recommend a smart home hub to connect all your devices, a smart thermostat to begin saving on your bills, and a smart display to serve as the control center for your entire home.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4ojwYuD" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Amazon Echo Show 8 (newest model)</a>
         <a href="https://amzn.to/3U8XLft" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Google Nest Learning Thermostat (4th Gen, 2024)</a>
         <a href="https://amzn.to/3UNtPpa" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Google Nest Hub 7” Smart Display</a>
@@ -373,7 +373,7 @@ export const blogPosts = [
       <p>Whether you're a casual exerciser or a dedicated athlete, the right wearable can be a game-changer. It's the perfect tool for setting goals, tracking progress, and staying motivated.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started on your own wellness journey, consider a GPS-enabled smartwatch for tracking your runs and workouts, a sleep-tracking smart ring for a deeper look into your recovery, and a smart scale that syncs with your wearable to give you a complete picture of your health.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/41ofSli" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung Galaxy Watch Ultra (2025)</a>
         <a href="https://amzn.to/46AYLjR" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Oura Ring 4</a>
         <a href="https://amzn.to/4fhUWlL" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">GE Smart Scale for Body Weight and Fat Percentage</a>
@@ -393,7 +393,7 @@ export const blogPosts = [
       <p>But it's not just about the hardware. The accessories are what truly complete the experience. A high-quality set of wireless earbuds, a comfortable portable controller, or even a portable monitor can elevate your mobile gaming session to a whole new level.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To take your gaming on the go, we recommend a powerful portable gaming console like the Steam Deck or a Nintendo Switch, a pair of low-latency wireless earbuds, and a comfortable portable gaming controller that clips onto your phone.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/46AKPX2" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Valve Steam Deck OLED 1TB Handheld Gaming Console</a>
         <a href="https://amzn.to/4fkS9YY" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">IAMJOY Gaming Earbuds</a>
         <a href="https://amzn.to/4flQORY" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">BACKBONE Pro Mobile Gaming Controller</a>
@@ -413,7 +413,7 @@ export const blogPosts = [
       <p>These gadgets are not just about doing more; they're about doing things better. They help you minimize distractions, collaborate more effectively, and ensure your time is spent on what truly matters.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To boost your productivity, you'll want to invest in a few key items. A portable smart scanner is a must for the paperless professional, a high-quality webcam ensures you look your best on video calls, and an adjustable laptop stand can improve your ergonomics and comfort during long work sessions.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/3HhNpa2" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Canon imageFORMULA R10 - Portable Document Scanner</a>
         <a href="https://amzn.to/4mj5aoq" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Owl Labs Meeting Owl 3 - 360° 1080p HD Conference Room Camera</a>
         <a href="https://amzn.to/45dZqoY" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Adjustable Laptop Docking Station Stand 11-IN-1</a>
@@ -433,7 +433,7 @@ export const blogPosts = [
       <p>These unexpected gadgets are perfect for those who love to discover new ways to improve their routines and surprise their friends with unique tech. They make great gifts and are excellent conversation starters.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>Ready to find your next favorite gadget? We recommend you check out a smart mug for the coffee lover, a portable air purifier for a healthier workspace, and a high-tech water bottle that tracks your hydration.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/44ZspxZ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Ember Temperature Control Smart Mug 2</a>
         <a href="https://amzn.to/4mubjOM" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Pure Enrichment PureZone Mini Portable Air Purifier</a>
         <a href="https://amzn.to/4mnQNyW" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">BOOST Smart Water Bottle with Reminder & Tracker</a>
@@ -453,7 +453,7 @@ export const blogPosts = [
       <p>These devices are designed to minimize your stress and maximize your productivity, no matter where your journey takes you. They are essential tools for anyone who wants to stay connected and work effectively while exploring the world.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To build your ultimate digital nomad toolkit, you'll need a few essentials. We recommend a universal travel adapter, a lightweight portable monitor, and a high-capacity power bank.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4m9m7Sv" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Anker Nano Travel Adapter</a>
         <a href="https://amzn.to/4okSi2S" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">ASUS ZenScreen 15.6” 1080P Portable Monitor</a>
         <a href="https://amzn.to/3J0iHmo" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Anker SOLIX C200 DC Power Bank Station</a>
@@ -473,7 +473,7 @@ export const blogPosts = [
       <p>Embracing sustainable tech is an easy way to make a positive impact on the environment without changing your habits dramatically. It's about making smarter choices that benefit both you and the planet.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To start your green tech journey, we recommend a smart power strip, a rechargeable portable solar charger, and a book on living a sustainable lifestyle for more ideas.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/3UcYaxs" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Geeni Surge Ultra Smart 6-Outlet Surge Protector</a>
         <a href="https://amzn.to/4m2EgkW" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">BigBlue 28W Solar Panel Charger</a>
         <a href="https://amzn.to/4ftC7wg" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Simply Living Well: A Guide to Creating a Natural, Low-Waste Home</a>
@@ -493,7 +493,7 @@ export const blogPosts = [
       <p>However, no gadget is perfect. The battery life, while improved, is a small issue to be aware of, but it doesn't detract from the overall excellent performance. If you are a fan of the brand or are looking for a significant upgrade, this device is definitely worth your attention.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>If our hands-on review has you convinced, you can get your own Apple Watch Ultra directly. To protect your new investment, we also recommend a high-quality protective case and a screen protector.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45btJ0Z" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple Watch Ultra 2 GPS + Cellular</a>
         <a href="https://amzn.to/4lgL2Cp" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">TAURI 2 Pack Hard Case for Apple Watch Ultra 2</a>
         <a href="https://amzn.to/4m58q7g" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">amBand Metal Case Screen Protector Cover for Apple Watch Ultra 2</a>
@@ -513,7 +513,7 @@ export const blogPosts = [
       <p>The right accessories can transform your new device from a great gadget into a complete and powerful system. They streamline your workflow, keep you comfortable, and ensure you get the most value out of your purchase.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To complete your new tech setup, we've picked out a few must-haves. A fast wireless charging stand, a USB-C hub with multiple ports, and a high-quality laptop backpack for safe and stylish transport.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/46YjTkn" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Anker MagSafe Compatible MagGo Charger Stand</a>
         <a href="https://amzn.to/44Z5rag" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Belkin 4-Port USB-C 3.2 Gen 2 Hub</a>
         <a href="https://amzn.to/4olpzLd" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">THE NORTH FACE Recon Everyday Laptop Backpack</a>
@@ -533,7 +533,7 @@ export const blogPosts = [
       <p>Don't underestimate the power of a great workspace. The right tools can reduce distractions, minimize physical strain, and create a routine that helps you get into a productive mindset every day.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To create your ultimate home office, we recommend an electric standing desk, a dual-monitor desk mount, and a wireless charging mat that can power multiple devices at once.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4fiFUw6" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">VIVO Electric 60 x 24 in Standing Desk</a>
         <a href="https://amzn.to/4oesyoJ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">VIVO 17 to 32 inch Dual Pneumatic Monitor Mount</a>
         <a href="https://amzn.to/4fnYOC3" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Mophie 4-in-1 Wireless Charging Mat</a>
@@ -553,7 +553,7 @@ export const blogPosts = [
       <p>This isn't about replacing human marketers; it's about empowering them. AI tools are like having a highly efficient, data-driven assistant on your team. They handle the grunt work so you can concentrate on building relationships and creating truly memorable campaigns.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To dip your toes into the world of AI marketing, start with the basics. We recommend a book on AI for marketers to understand the landscape, an AI writing assistant subscription to speed up your content workflow, and a high-speed SSD to handle all the data you'll be working with.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45mBVdr" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">The Instant AI Agency</a>
         <a href="https://amzn.to/4fh0iO6" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung T5 EVO Portable SSD 8TB</a>
       </div>
@@ -572,7 +572,7 @@ export const blogPosts = [
       <p>This shift to deep insights allows you to move from general marketing to a hyper-personalized approach. It's the difference between sending a mass email and sending an email that feels like it was written just for one person.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started with deeper customer insights, you'll need the right tools. We recommend a high-quality laptop with a powerful processor, a book on predictive analytics, and a subscription to a business intelligence platform to visualize your data.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/40QwlP8" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple 2024 MacBook Pro Laptop with M4 Max</a>
         <a href="https://amzn.to/4l9uzQg" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die</a>
       </div>
@@ -591,7 +591,7 @@ export const blogPosts = [
       <p>While the concept may sound complex, the tools available today make it more accessible than ever. You don't need a Ph.D. in data science to start using these insights. The key is to have a good grasp of your data and the right software to help you make sense of it.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To master predictive analytics, you'll want to start with the right resources. A book on predictive analytics is a great starting point, a high-capacity external hard drive is essential for storing your data, and a comfortable ergonomic keyboard + mouse will make it easier to work with large datasets.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45jHwkT" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Statistics 101: From Data Analysis and Predictive Modeling</a>
         <a href="https://amzn.to/3IWTpFF" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">SAMSUNG T9 Portable SSD 4TB</a>
         <a href="https://amzn.to/4mpFNBm" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Logitech ERGO K860 Wireless Ergonomic Keyboard</a>
@@ -611,7 +611,7 @@ export const blogPosts = [
       <p>The best way to use these tools is to think of them as a co-pilot. They can give you a starting point, but it's your human touch, creativity, and unique voice that will make the content truly great.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started with AI writing, we recommend a book on copywriting, a high-performance laptop for seamless use of the software, and a subscription to a popular AI writing assistant to begin experimenting.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4l9riAE" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">The Content Beast: Create Story-Driven Content</a>
         <a href="https://amzn.to/45yD2rF" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Toshiba Dynabook Satellite Pro L50-G Business Computer</a>
       </div>
@@ -630,7 +630,7 @@ export const blogPosts = [
       <p>The key to succeeding in this new era of SEO is to embrace the technology and use it to your advantage. AI is your co-pilot, helping you navigate the complex and ever-changing landscape of search algorithms.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started with AI-driven SEO, a few key products can help. We recommend a book on modern SEO strategies, a high-quality monitor to view your analytics dashboards, and a subscription to a business intelligence platform to visualize your data.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4l7fdfn" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">From Likes to Sales: Digital Marketing Simplified</a>
         <a href="https://amzn.to/45yHXJd" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung 49" Odyssey OLED G9 (G91SD) Curved Monitor</a>
       </div>
@@ -649,7 +649,7 @@ export const blogPosts = [
       <p>Using AI, you can minimize waste, increase sales, and build a more efficient and profitable business. It frees you from the guesswork and allows you to focus on building a brand that customers love.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To implement AI in your e-commerce business, you'll need the right tools. We recommend a powerful business laptop, a high-capacity external hard drive to store your data, and a book on data analytics for e-commerce.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/3JewNk2" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple 2024 MacBook Pro Laptop with M4 Pro</a>
         <a href="https://amzn.to/4lZj9Qv" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Seagate Expansion 24TB External Hard Drive HDD</a>
         <a href="https://amzn.to/4muAZuG" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Digital Marketing Analytics: Making Sense of Consumer Data</a>
@@ -669,7 +669,7 @@ export const blogPosts = [
       <p>This is your chance to move from a reactive strategy to a proactive one. Instead of scrambling to catch up to trends, you'll be able to create content and products that are perfectly timed to meet demand.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get your hands on the future of trend forecasting, you'll need the right technology. We recommend a high-resolution monitor for viewing complex data visualizations, a subscription to a popular business intelligence software, and a book on trend forecasting to master the methodology.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4lgJmZD" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung 49” Business Curved Ultrawide Dual QHD</a>
         <a href="https://amzn.to/4oBFzJt" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">The Trend Forecaster's Handbook: Second Edition</a>
       </div>
@@ -688,7 +688,7 @@ export const blogPosts = [
       <p>The result is a more efficient, productive, and effective marketing operation. By streamlining your workflow with AI, you can accelerate your growth and achieve your goals faster than ever before.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To automate and accelerate your workflow, we recommend a few key products. A portable laptop stand can improve your comfort and productivity, a wireless keyboard and mouse combo can speed up your data entry, and a book on marketing automation can help you master the process.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/4laZ6NJ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">SODI Ultra-Compact Foldable & Portable Laptop Stand</a>
         <a href="https://amzn.to/3H5DJ2v" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Logitech MK345 Wireless Keyboard and Mouse Combo</a>
         <a href="https://amzn.to/3UGSknY" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Join or Die: Digital Advertising in the Age of Automation</a>
@@ -708,7 +708,7 @@ export const blogPosts = [
       <p>The brands that will succeed in the long run are those that use AI to enhance the human experience, not replace it.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To ensure you're on the right side of the ethical AI debate, you'll need the right resources. We recommend a book on data ethics, a high-security external hard drive to protect your customer data, and a book on building customer trust in the digital age.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/41oQ7kX" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">AI Ethics: MIT Press Essential Knowledge Series</a>
         <a href="https://amzn.to/45js9ZB" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">SAMSUNG T9 Portable SSD 4TB</a>
         <a href="https://amzn.to/4l8ZlbW" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Trust-Based Selling: Using Customer Focus and Collaboration</a>
@@ -728,7 +728,7 @@ export const blogPosts = [
       <p>This level of personalization not only drives conversions and revenue but also builds brand loyalty. When customers feel seen and understood, they are more likely to become repeat buyers and brand advocates.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To start personalizing your customer experiences, you'll need the right tools. We recommend a powerful desktop computer for data processing, a book on data-driven marketing, and a high-resolution monitor to analyze your customer journey maps.</p>
-      <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
+      <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
         <a href="https://amzn.to/45zCB0k" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple 2024 Mac mini Desktop Computer with M4 chip</a>
         <a href="https://amzn.to/45vRkJE" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Data-Driven Marketing: The 15 Metrics Everyone in Marketing Should Know</a>
         <a href="https://amzn.to/4mqZIjp" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple Studio Display - Nano-Texture Glass</a>

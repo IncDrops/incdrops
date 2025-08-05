@@ -26,14 +26,15 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <Badge variant="secondary">{post.tag}</Badge>
             <h1 className="text-4xl font-bold font-headline tracking-tight mt-2">{post.title}</h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             {post.images.map((image, index) => (
-                <div key={index} className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-lg">
+                <div key={index} className="relative w-full rounded-2xl overflow-hidden shadow-lg">
                     <Image
                         src={image}
                         alt={`${post.title} - image ${index + 1}`}
-                        fill
-                        className="object-cover"
+                        width={600}
+                        height={600}
+                        className="object-cover w-full h-auto"
                         data-ai-hint={post['data-ai-hint']}
                         priority={index === 0}
                     />
