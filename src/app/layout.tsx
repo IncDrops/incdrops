@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'IncDrops',
   description: 'Get instant, AI-powered trend forecasts for ideas, hashtags, products, memes, and more.',
+  icons: {
+    icon: '/inc-icon.png',
+  },
 };
 
 export default function RootLayout({
