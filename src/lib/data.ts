@@ -1,5 +1,6 @@
 
 
+
 export const appIdeas = [
     "AI-Powered Personal Stylist",
     "Gamified Language Learning App",
@@ -128,7 +129,7 @@ export const blogPosts = [
     id: 1,
     title: "Ride the Wave: How to Profit from the Next Social Media Hashtag Boom",
     summary: "Every so often, a hashtag explodes into a cultural phenomenon. For a savvy marketer or creator, this isn't just a trend to watch—it's an opportunity to profit.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-1.png",
     "data-ai-hint": "social media",
     tag: "Social Media",
     link: "/blog/1",
@@ -149,7 +150,7 @@ export const blogPosts = [
     id: 2,
     title: "Future-Proof Your Life: The Best Gadgets for Early Adopters in 2025",
     summary: "The world of technology moves at a dizzying pace. For those who love to be on the cutting edge, keeping up with the latest and greatest gadgets is a passion.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-2.png",
     "data-ai-hint": "gadgets tech",
     tag: "Gadgets",
     link: "/blog/2",
@@ -170,7 +171,7 @@ export const blogPosts = [
     id: 3,
     title: "The Crystal Ball: How AI Trend Forecasting Tools Give Marketers an Edge",
     summary: "The most successful marketers don't guess—they use data to predict. This is where AI trend forecasting tools come in, giving you a clear, data-driven look into the future.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-3.png",
     "data-ai-hint": "ai marketing",
     tag: "AI & Marketing",
     link: "/blog/3",
@@ -181,7 +182,6 @@ export const blogPosts = [
        <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To start harnessing the power of AI, you'll need the right setup. We recommend a high-performance laptop that can handle data-intensive tasks, a large-screen monitor for a better view of your analytics dashboards, and a book on data-driven marketing to understand the principles behind these powerful tools.</p>
        <div class="my-4 p-4 border rounded-lg bg-card/80 space-y-2">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Apple 2025 MacBook Air 15-inch Laptop with M4 chip</a>
         <a href="https://amzn.to/40P6PKd" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Samsung 49" Odyssey OLED (G93SC) Series Curved Gaming Monitor</a>
         <a href="https://amzn.to/4m2RyxU" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">Mastering the Data Paradox: Key to Winning in the AI Age</a>
       </div>
@@ -191,7 +191,7 @@ export const blogPosts = [
     id: 4,
     title: "The Ultimate Guide: Finding and Riding the Next Viral Hashtag",
     summary: "Finding the next trending hashtag is a skill, and it's one that can seriously boost your visibility and reach. It's less about luck and more about having a system.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-4.png",
     "data-ai-hint": "viral marketing",
     tag: "Social Media",
     link: "/blog/4",
@@ -212,7 +212,7 @@ export const blogPosts = [
     id: 5,
     title: "Beyond the Hashtag: How to Build an Engaged Community from a Viral Moment",
     summary: "In the fast-paced world of social media, your content has just a few seconds to make an impression. The right visuals are no longer a luxury—they're a necessity.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-5.png",
     "data-ai-hint": "content creation",
     tag: "Content Strategy",
     link: "/blog/5",
@@ -232,7 +232,7 @@ export const blogPosts = [
     id: 6,
     title: "Stop the Scroll: How to Create Standout Content for Any Hashtag",
     summary: "In the fast-paced world of social media, your content has just a few seconds to make an impression. The right visuals are no longer a luxury—they're a necessity.",
-    image: "https://placehold.co/800x450",
+    image: "/blog/blog-6.png",
     "data-ai-hint": "influencer marketing",
     tag: "Content Strategy",
     link: "/blog/6",
