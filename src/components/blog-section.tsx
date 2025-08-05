@@ -3,20 +3,36 @@ import { blogPosts } from "@/lib/data";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, LoaderCircle } from "lucide-react";
 import Link from "next/link";
+import { generateImage } from "@/ai/flows/generate-image";
+import { Suspense } from "react";
+
+const GeneratedImage = async ({ post }: { post: typeof blogPosts[0] }) => {
+    const { imageUrl } = await generateImage({ prompt: post['data-ai-hint'] });
+    return (
+        <Image
+            src={imageUrl}
+            alt={post.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+    )
+}
+
+const ImagePlaceholder = () => (
+    <div className="w-full h-full bg-muted flex items-center justify-center">
+        <LoaderCircle className="animate-spin text-muted-foreground" />
+    </div>
+)
 
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
     return (
         <Card className="min-w-[300px] sm:min-w-[350px] flex-shrink-0 snap-start bg-card/60 backdrop-blur-lg border-border/20 shadow-lg h-full flex flex-col overflow-hidden group">
             <div className="relative aspect-video w-full overflow-hidden">
-                <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    data-ai-hint={post['data-ai-hint']}
-                />
+                <Suspense fallback={<ImagePlaceholder />}>
+                    <GeneratedImage post={post} />
+                </Suspense>
             </div>
             <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex-grow">
@@ -25,7 +41,7 @@ const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
                     <p className="text-muted-foreground mt-2 text-sm">{post.summary}</p>
                 </div>
                 <Button asChild variant="ghost" className="justify-start p-0 h-auto mt-4 text-accent font-bold">
-                    <Link href={post.link}>
+                    <Link href={`/blog/${post.id}`}>
                         Learn more
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
