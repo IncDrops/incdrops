@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
     return (
@@ -24,10 +25,10 @@ const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
                     <p className="text-muted-foreground mt-2 text-sm">{post.summary}</p>
                 </div>
                 <Button asChild variant="ghost" className="justify-start p-0 h-auto mt-4 text-accent font-bold">
-                    <a href={post.link}>
+                    <Link href={post.link}>
                         Learn more
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                    </a>
+                    </Link>
                 </Button>
             </CardContent>
         </Card>
