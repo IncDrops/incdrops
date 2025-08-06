@@ -20,7 +20,9 @@ export async function getTrendReport(query: string) {
   }
 }
 
-export async function createCheckoutSession(query: string) {
+export async function createCheckoutSession(formData: FormData) {
+  const query = formData.get('query') as string;
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [

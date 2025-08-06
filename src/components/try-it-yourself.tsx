@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition, useEffect } from "react";
+import { useState, useTransition, useEffect, useRef } from "react";
 import { useSearchParams } from 'next/navigation'
 import { Wand2, LoaderCircle } from "lucide-react";
 import { getTrendReport, createCheckoutSession } from "@/app/actions";
@@ -27,6 +27,7 @@ export default function TryItYourself() {
   const [isGenerating, setIsGenerating] = useState(false);
   const { toast } = useToast();
   const searchParams = useSearchParams()
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     const reportQuery = searchParams.get('report_query');
@@ -61,10 +62,13 @@ export default function TryItYourself() {
 
   const handleCheckout = () => {
     if (!query.trim()) return;
-
-    startTransition(async () => {
-       await createCheckoutSession(query);
-    });
+    if (formRef.current) {
+      const formData = new FormData(formRef.current);
+      formData.set('query', query);
+      startTransition(async () => {
+         await createCheckoutSession(formData);
+      });
+    }
   }
 
   return (
@@ -72,9 +76,10 @@ export default function TryItYourself() {
         <div className="mt-12">
             <h2 className="text-3xl font-bold font-headline tracking-tight text-center">Ready to unlock a trend? Get any report for just $1.</h2>
             <p className="text-muted-foreground text-center mt-2">Enter any idea, hashtag, or product to get an instant AI trend forecast.</p>
-            <div className="mt-6 max-w-2xl mx-auto flex gap-2">
+            <form ref={formRef} action={createCheckoutSession} className="mt-6 max-w-2xl mx-auto flex gap-2">
                 <Input
                     type="text"
+                    name="query"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="e.g., 'NFTs in gaming' or '#cleantok'"
@@ -109,7 +114,7 @@ export default function TryItYourself() {
                         </AlertDialogFooter>
                     </AlertDialogContent>
                 </AlertDialog>
-            </div>
+            </form>
 
             {(isGenerating || report) && (
               <div className="mt-8">
@@ -124,7 +129,7 @@ export default function TryItYourself() {
                         report && (
                             <>
                             <p className="font-bold font-headline text-lg text-accent">Report for: "{query}"</p>
-                            <p className="mt-2 text-foreground/80">{report}</p>
+                            <div className="mt-4 text-foreground/80" dangerouslySetInnerHTML={{ __html: report }} />
                             </>
                         )
                     )}
