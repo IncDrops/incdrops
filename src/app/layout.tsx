@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "Go from idea to insight in seconds. Our AI-powered platform delivers instant, curated trend reports for ideas, hashtags, products, and more. Stop guessing, and start seeing what's next.",
   icons: {
     icon: '/inc-icon.png',
+    shortcut: { url: "/inc-icon.png", type: "image/png" },
   },
 };
 
