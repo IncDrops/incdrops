@@ -70,7 +70,7 @@ export default function TryItYourself() {
   return (
     <section>
         <div className="mt-12">
-            <h2 className="text-3xl font-bold font-headline tracking-tight text-center">Ready to unlock a trend? Get any report for just $5.</h2>
+            <h2 className="text-3xl font-bold font-headline tracking-tight text-center">Ready to unlock a trend? Get any report for just $1.</h2>
             <p className="text-muted-foreground text-center mt-2">Enter any idea, hashtag, or product to get an instant AI trend forecast.</p>
             <div className="mt-6 max-w-2xl mx-auto flex gap-2">
                 <Input
@@ -98,13 +98,13 @@ export default function TryItYourself() {
                         <AlertDialogDescription>
                             You are about to generate an AI-powered trend report for the query: <span className="font-bold text-accent">"{query}"</span>.
                             <br/><br/>
-                            The cost for this report is <span className="font-bold text-accent">$5.00</span>. This is a non-refundable charge. Do you wish to proceed?
+                            The cost for this report is <span className="font-bold text-accent">$1.00</span>. This is a non-refundable charge. Do you wish to proceed?
                         </AlertDialogDescription>
                         </AlertDialogHeader>
                         <AlertDialogFooter>
                         <AlertDialogCancel>Cancel</AlertDialogCancel>
                         <AlertDialogAction onClick={handleCheckout} disabled={isPending}>
-                            {isPending ? 'Processing...' : 'Confirm & Pay $5.00'}
+                            {isPending ? 'Processing...' : 'Confirm & Pay $1.00'}
                         </AlertDialogAction>
                         </AlertDialogFooter>
                     </AlertDialogContent>
