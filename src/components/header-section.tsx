@@ -21,8 +21,8 @@ const HeaderSection = () => {
                 </Button>
             </div>
             <div className="container mx-auto text-center pb-4 px-4 sm:px-6 lg:px-8">
-                 <p className="text-muted-foreground text-sm md:text-base">
-                    Get instant, AI-powered trend forecasts for ideas, hashtags, products, memes, and more.
+                 <p className="text-muted-foreground text-sm md:text-base max-w-3xl mx-auto">
+                    Go from idea to insight in seconds. Our AI-powered platform delivers instant, curated trend reports for ideas, hashtags, products, and more. Stop guessing, and start seeing what's next.
                 </p>
             </div>
         </header>
