@@ -15,6 +15,8 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
     notFound();
   }
 
+  const [firstImage, ...remainingImages] = post.images;
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground isolate">
       <div className="fixed inset-0 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] -z-10"></div>
@@ -28,25 +30,43 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <Badge variant="secondary">{post.tag}</Badge>
             <h1 className="text-4xl font-bold font-headline tracking-tight mt-2">{post.title}</h1>
           </div>
-          <div className="grid grid-cols-1 gap-8">
-            {post.images.map((image, index) => (
-                <div key={index} className="relative w-full rounded-2xl overflow-hidden shadow-lg">
-                    <Image
-                        src={image}
-                        alt={`${post.title} - image ${index + 1}`}
-                        width={600}
-                        height={600}
-                        className="object-cover w-full h-auto"
-                        data-ai-hint={post['data-ai-hint']}
-                        priority={index === 0}
-                    />
-                </div>
-            ))}
-          </div>
+          
+          {firstImage && (
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg mb-8">
+                <Image
+                    src={firstImage}
+                    alt={`${post.title} - image 1`}
+                    width={600}
+                    height={600}
+                    className="object-cover w-full h-auto"
+                    data-ai-hint={post['data-ai-hint']}
+                    priority
+                />
+            </div>
+          )}
+
           <div
-            className="prose prose-lg dark:prose-invert max-w-none text-foreground/80 space-y-4 mt-8"
+            className="prose prose-lg dark:prose-invert max-w-none text-foreground/80 space-y-4"
             dangerouslySetInnerHTML={{ __html: post.fullContent }}
           />
+
+          {remainingImages.length > 0 && (
+            <div className="grid grid-cols-1 gap-8 mt-8">
+              {remainingImages.map((image, index) => (
+                  <div key={index} className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+                      <Image
+                          src={image}
+                          alt={`${post.title} - image ${index + 2}`}
+                          width={600}
+                          height={600}
+                          className="object-cover w-full h-auto"
+                          data-ai-hint={post['data-ai-hint']}
+                      />
+                  </div>
+              ))}
+            </div>
+          )}
+
            <div className="mt-8">
             <Button asChild variant="ghost" className="mb-4">
               <Link href="/#blog">
