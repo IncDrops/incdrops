@@ -16,16 +16,35 @@ export default function PrivacyPolicy() {
             <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg">
                 <CardHeader>
                     <CardTitle className="text-3xl font-bold font-headline tracking-tight">Privacy Policy</CardTitle>
+                    <p className="text-sm text-muted-foreground pt-1">Last Updated: August 5, 2025</p>
                 </CardHeader>
                 <CardContent className="space-y-4 text-foreground/80">
-                    <p>Your privacy is important to us. It is IncDrops's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>
-                    <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
-                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">Information We Collect</h3>
-                    <p>We may collect personal information from you such as your name, email address, and payment information when you use our services. We may also collect non-personal information, such as your IP address and browsing behavior, to improve our services.</p>
-                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">Use of Information</h3>
-                    <p>The information we collect is used to provide and improve our services, process transactions, and communicate with you. We do not share your personal information with third parties, except as required by law.</p>
-                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">Security</h3>
-                    <p>We take reasonable precautions to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee its absolute security.</p>
+                    <p>Your privacy is important to us. This Privacy Policy explains what information IncDrops collects, how we use it, and your rights concerning that information. This policy applies to all information collected through our website, incdrops.com.</p>
+                    
+                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">1. Information We Collect</h3>
+                    <p>We collect information to provide and improve our services to you. This includes:</p>
+                    <p><strong>Personal Information:</strong> When you use our services (e.g., to send an inquiry or process a payment), we may collect personal details such as your name, email address, and payment information. This information is necessary to deliver our services and communicate with you.</p>
+                    <p><strong>Query Data:</strong> When you enter a query (an idea, hashtag, or product) into our AI, this data is collected. We use this information to generate your specific trend report and to improve the overall accuracy and functionality of our AI models.</p>
+                    <p><strong>Non-Personal Information:</strong> We automatically collect certain non-personal data when you visit our site. This may include your IP address, browser type, device information, and a record of the pages you visit. This data helps us understand how our service is used and allows us to make improvements.</p>
+
+                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">2. How We Use Your Information</h3>
+                    <p>The information we collect is used for the following purposes:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li><strong>Service Delivery:</strong> To generate and deliver the trend reports you've purchased.</li>
+                        <li><strong>Transactions:</strong> To securely process your payment for reports.</li>
+                        <li><strong>Communication:</strong> To respond to your inquiries and send you important updates about our services.</li>
+                        <li><strong>Service Improvement:</strong> To analyze usage patterns and feedback, which helps us enhance our AI, website functionality, and user experience.</li>
+                    </ul>
+
+                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">3. Information Sharing</h3>
+                    <p>We do not sell your personal information to third parties. We will only share your information in the following circumstances:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li><strong>Service Providers:</strong> We may share your information with trusted third-party services that help us operate our website and process payments (e.g., payment processors). These providers are contractually obligated to protect your information.</li>
+                        <li><strong>Legal Compliance:</strong> We will disclose your information if we are legally required to do so by law, court order, or governmental regulation.</li>
+                    </ul>
+
+                    <h3 className="font-bold text-xl pt-4 font-headline text-primary-foreground">4. Data Security</h3>
+                    <p>We implement reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee its absolute security.</p>
                 </CardContent>
             </Card>
         </div>
