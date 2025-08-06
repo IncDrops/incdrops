@@ -3,7 +3,7 @@
 import { generateTrendReports, GenerateTrendReportsInput } from '@/ai/flows/generate-trend-reports';
 import { redirect } from 'next/navigation';
 import Stripe from 'stripe';
-import nodemailer from 'nodemailer';
+import { sendInquiryEmail } from '@/lib/mail';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -47,34 +47,8 @@ export async function createCheckoutSession(query: string) {
 
 export async function handleInquiry(data: { ideaDescription: string; appInterest: string; message: string; }) {
   console.log("New Inquiry Received. Preparing to send email...");
-
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT),
-    secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for other ports
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-
-  const mailOptions = {
-    from: `"IncDrops Inquiry" <${process.env.SMTP_USER}>`,
-    to: process.env.MAIL_TO,
-    subject: `New App Kit Inquiry: ${data.appInterest}`,
-    html: `
-      <h2>New App Kit Inquiry</h2>
-      <p><strong>App Idea Description:</strong></p>
-      <p>${data.ideaDescription}</p>
-      <p><strong>App Kit of Interest:</strong></p>
-      <p>${data.appInterest}</p>
-      <p><strong>Message:</strong></p>
-      <p>${data.message}</p>
-    `,
-  };
-
   try {
-    await transporter.sendMail(mailOptions);
+    await sendInquiryEmail(data);
     console.log("Inquiry email sent successfully!");
     return { success: true };
   } catch (error) {
