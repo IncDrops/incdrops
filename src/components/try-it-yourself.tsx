@@ -70,7 +70,7 @@ export default function TryItYourself() {
   return (
     <section>
         <div className="mt-12">
-            <h2 className="text-3xl font-bold font-headline tracking-tight text-center">Ready to see what's trending? Each report is $5.</h2>
+            <h2 className="text-3xl font-bold font-headline tracking-tight text-center">Ready to unlock a trend? Get any report for just $5.</h2>
             <p className="text-muted-foreground text-center mt-2">Enter any idea, hashtag, or product to get an instant AI trend forecast.</p>
             <div className="mt-6 max-w-2xl mx-auto flex gap-2">
                 <Input
