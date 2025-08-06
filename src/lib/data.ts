@@ -1,28 +1,4 @@
 
-export const appIdeas = [
-    "AI-Powered Personal Stylist",
-    "Gamified Language Learning App",
-    "Subscription Box for Artisanal Coffee",
-    "Smart Home Energy Optimizer",
-    "Virtual Reality Travel Experience",
-    "Personalized Meal Planning Service",
-    "On-Demand Pet Grooming App",
-    "Mental Wellness & Meditation Platform",
-    "Sustainable Fashion Marketplace",
-    "Local Artisan Discovery App",
-    "Skill-sharing & Bartering Network",
-    "AR-Powered Furniture Preview",
-    "Community Garden Management Tool",
-    "Interactive Storytelling App for Kids",
-    "Fitness Challenge App with Friends",
-    "DIY Project & Crafting Guide",
-    "Personal Finance & Budgeting AI",
-    "Customizable Board Game Creator",
-    "Niche Social Network for Hobbyists",
-    "Event Planning & Ticketing Platform",
-    "AI-based Dream Journal & Analyzer"
-];
-
 export const sampleGalleryData = [
     {
         id: 1,
@@ -568,7 +544,7 @@ export const blogPosts = [
     fullContent: `
       <p>Google Analytics is a powerful tool, but it only scratches the surface of what's possible with today's technology. For marketers who want a truly competitive edge, the next frontier is using AI tools to unlock deeper customer insights. These platforms go beyond simple traffic metrics to analyze customer behavior, sentiment, and intent with a level of detail that was previously unimaginable.</p>
       <p>AI-powered analytics can help you understand why customers are behaving a certain way, not just what they are doing. These tools can process unstructured data like customer reviews and social media comments to give you a clearer picture of what your audience truly thinks and feels about your brand. By understanding these nuances, you can create more targeted campaigns and build more meaningful customer relationships.</p>
-      <p>This shift to deep insights allows you to move from general marketing to a hyper-personalized approach. It's the difference between sending a mass email and sending an email that feels like it was written just for one person.</p>
+      <p>This shift to deep insights allows you to move from a general marketing to a hyper-personalized approach. It's the difference between sending a mass email and sending an email that feels like it was written just for one person.</p>
       <h3 class="font-bold text-xl pt-4 font-headline text-primary-foreground">Affiliate Product Spotlight</h3>
       <p>To get started with deeper customer insights, you'll need the right tools. We recommend a high-quality laptop with a powerful processor, a book on predictive analytics, and a subscription to a business intelligence platform to visualize your data.</p>
       <div class="my-4 p-4 border rounded-lg bg-card/80 flex flex-col space-y-2">
@@ -737,4 +713,5 @@ export const blogPosts = [
 ];
 
     
+
 

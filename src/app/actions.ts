@@ -3,7 +3,6 @@
 import { generateTrendReports, GenerateTrendReportsInput } from '@/ai/flows/generate-trend-reports';
 import { redirect } from 'next/navigation';
 import Stripe from 'stripe';
-import { sendInquiryEmail } from '@/lib/mail';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -43,16 +42,4 @@ export async function createCheckoutSession(query: string) {
   });
 
   redirect(session.url!);
-}
-
-export async function handleInquiry(data: { ideaDescription: string; appInterest: string; message: string; }) {
-  console.log("New Inquiry Received. Preparing to send email...");
-  try {
-    await sendInquiryEmail(data);
-    console.log("Inquiry email sent successfully!");
-    return { success: true };
-  } catch (error) {
-    console.error("Email sending failed:", error);
-    return { success: false, error: "Failed to send inquiry. Please check server logs for details." };
-  }
 }

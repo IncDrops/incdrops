@@ -1,5 +1,4 @@
 import HeaderSection from '@/components/header-section';
-import InquiryModule from '@/components/inquiry-module';
 import SamplesGallery from '@/components/samples-gallery';
 import CuratedTrends from '@/components/curated-trends';
 import DynamicAdCards from '@/components/dynamic-ad-cards';
@@ -21,7 +20,6 @@ export default function Home() {
           <TryItYourself />
           <CuratedTrends />
           <SamplesGallery />
-          <InquiryModule />
           <DynamicAdCards />
           <BlogSection />
         </div>
