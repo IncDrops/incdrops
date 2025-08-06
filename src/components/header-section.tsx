@@ -8,7 +8,6 @@ const HeaderSection = () => {
         <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-lg border-b border-border/20">
             <div className="container mx-auto flex h-[72px] items-center justify-between px-4 sm:px-6 lg:px-8">
                 <Link href="/" className="flex items-center gap-2">
-                    <Image src="/incdrops-logo.png" alt="IncDrops Logo" width={32} height={32} className="h-8 w-auto" />
                     <Logo className="h-8 w-auto" />
                 </Link>
                 <div className="flex items-center gap-4">
