@@ -93,7 +93,7 @@ export default function InquiryModule() {
                             render={({ field }) => (
                                 <FormItem>
                                 <FormLabel>Which App Kit are you interested in?</FormLabel>
-                                <Select onValuechange={field.onChange} defaultValue={field.value}>
+                                <Select onValueChange={field.onChange} defaultValue={field.value}>
                                     <FormControl>
                                     <SelectTrigger className="bg-background/80">
                                         <SelectValue placeholder="Select an app idea..." />
