@@ -43,3 +43,38 @@ export async function createCheckoutSession(query: string) {
 
   redirect(session.url!);
 }
+
+export async function handleInquiry(data: { ideaDescription: string; appInterest: string; message: string; }) {
+  console.log("New Inquiry Received:");
+  console.log("App Idea:", data.ideaDescription);
+  console.log("App Kit Interest:", data.appInterest);
+  console.log("Message:", data.message);
+
+  // Here you would add your email sending logic, for example using a service like Resend or Nodemailer.
+  // Example with Resend (you would need to install the 'resend' package):
+  /*
+  import { Resend } from 'resend';
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'YOUR_EMAIL@example.com', // Replace with your email address
+      subject: `New Inquiry: ${data.appInterest}`,
+      html: `
+        <h2>New App Inquiry</h2>
+        <p><strong>App Idea:</strong> ${data.ideaDescription}</p>
+        <p><strong>App Kit Interest:</strong> ${data.appInterest}</p>
+        <p><strong>Message:</strong></p>
+        <p>${data.message}</p>
+      `,
+    });
+    return { success: true };
+  } catch (error) {
+    console.error("Email sending failed:", error);
+    return { success: false, error: "Failed to send inquiry." };
+  }
+  */
+
+  return { success: true };
+}

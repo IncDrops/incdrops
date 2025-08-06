@@ -3,7 +3,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Rocket } from "lucide-react";
+import { Rocket, LoaderCircle } from "lucide-react";
+import { useTransition } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,6 +26,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { appIdeas } from "@/lib/data";
+import { handleInquiry } from "@/app/actions";
 
 const inquiryFormSchema = z.object({
   ideaDescription: z.string().min(1, "Please describe your app idea."),
@@ -42,18 +44,29 @@ const defaultValues: Partial<InquiryFormValues> = {
 
 export default function InquiryModule() {
     const { toast } = useToast();
+    const [isPending, startTransition] = useTransition();
     const form = useForm<InquiryFormValues>({
         resolver: zodResolver(inquiryFormSchema),
         defaultValues,
     });
 
     function onSubmit(data: InquiryFormValues) {
-        console.log("Inquiry Submitted:", data);
-        toast({
-          title: "Inquiry Sent! 🚀",
-          description: "Our team has received your message and will get back to you shortly.",
+        startTransition(async () => {
+            const result = await handleInquiry(data);
+            if (result.success) {
+                toast({
+                  title: "Inquiry Sent! 🚀",
+                  description: "Our team has received your message and will get back to you shortly.",
+                });
+                form.reset();
+            } else {
+                 toast({
+                  title: "Error",
+                  description: "There was a problem sending your inquiry. Please try again later.",
+                  variant: "destructive"
+                });
+            }
         });
-        form.reset();
     }
 
     return (
@@ -80,7 +93,7 @@ export default function InquiryModule() {
                             render={({ field }) => (
                                 <FormItem>
                                 <FormLabel>Which App Kit are you interested in?</FormLabel>
-                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <Select onValuechange={field.onChange} defaultValue={field.value}>
                                     <FormControl>
                                     <SelectTrigger className="bg-background/80">
                                         <SelectValue placeholder="Select an app idea..." />
@@ -118,8 +131,14 @@ export default function InquiryModule() {
                         <p className="text-xs text-muted-foreground text-center sm:text-left">
                             No sign-up needed. Your inquiry will be sent directly to our team.
                         </p>
-                        <Button type="submit" className="w-full sm:w-auto font-bold bg-gradient-accent text-accent-foreground animate-gradient">
-                            Send Inquiry <Rocket className="ml-2 h-4 w-4" />
+                        <Button type="submit" className="w-full sm:w-auto font-bold bg-gradient-accent text-accent-foreground animate-gradient" disabled={isPending}>
+                            {isPending ? (
+                                <LoaderCircle className="animate-spin" />
+                            ) : (
+                                <>
+                                    Send Inquiry <Rocket className="ml-2 h-4 w-4" />
+                                </>
+                            )}
                         </Button>
                     </div>
                 </form>
