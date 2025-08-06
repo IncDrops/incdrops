@@ -13,7 +13,7 @@ const HeaderSection = () => {
                 </Link>
                 <div className="flex items-center gap-4">
                     <h1 className="hidden md:block text-center font-headline text-lg md:text-xl font-bold bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent">
-                        What’s the next big thing?
+                        Find the next big thing, instantly!
                     </h1>
                 </div>
                 <Button className="font-bold bg-gradient-accent text-accent-foreground animate-gradient">
