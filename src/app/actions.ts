@@ -33,7 +33,7 @@ export async function createCheckoutSession(formData: FormData) {
             name: 'AI Trend Report',
             description: `Your comprehensive analysis for: "${query}"`,
           },
-          unit_amount: 100, // $1.00 in cents
+          unit_amount: 500, // $5.00 in cents
         },
         quantity: 1,
       },

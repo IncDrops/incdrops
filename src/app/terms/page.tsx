@@ -49,7 +49,10 @@ export default function TermsOfUse() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Separator />
           <div className="flex flex-col sm:flex-row justify-between items-center py-8 text-muted-foreground text-sm">
-            <span>© {new Date().getFullYear()} IncDrops.com. All rights reserved.</span>
+            <div className="flex flex-col sm:flex-row items-center gap-x-4 gap-y-2">
+              <span>© {new Date().getFullYear()} IncDrops.com. All rights reserved.</span>
+              <span>Questions? Send inquiries to info@incdrops.com</span>
+            </div>
             <div className="flex gap-4 mt-4 sm:mt-0">
                 <Link href="/terms" className="hover:text-accent transition-colors">Terms of Use</Link>
                 <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
