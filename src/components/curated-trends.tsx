@@ -85,7 +85,7 @@ export default function CuratedTrends() {
     <section>
         <div className="mb-8">
             <h2 className="text-3xl font-bold font-headline tracking-tight">Curated Trend Reports</h2>
-            <p className="text-muted-foreground mt-2">Showcasing pre-generated AI trend reports.</p>
+            <p className="text-muted-foreground mt-2 max-w-3xl">Explore our pre-generated trend reports to see how trends emerge and where they're headed. Use our AI to forecast your own idea and get the insights you need to inspire your next big project. Every report is a blueprint for what's next.</p>
         </div>
         <div className="space-y-8">
             {preGeneratedReports.map((item, index) => (
