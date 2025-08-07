@@ -6,7 +6,7 @@ export const sampleGalleryData = [
         query: "sustainable packaging startups",
         score: 88,
         rationale: "Rising consumer awareness and corporate responsibility are driving a massive shift towards sustainable alternatives. Innovations in biodegradable and compostable materials are seeing significant VC funding and search interest.",
-        style: "lg:col-span-2"
+        style: "md:col-span-1"
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ export const sampleGalleryData = [
         query: "glucose monitoring smart watch",
         score: 95,
         rationale: "The convergence of healthcare and consumer tech is a dominant trend. Non-invasive monitoring is the next frontier, with major tech players and startups racing to crack the market. Social media buzz is exceptionally high.",
-        style: ""
+        style: "md:col-span-1"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ export const sampleGalleryData = [
         query: "pixel art RPGs 2025",
         score: 75,
         rationale: "Nostalgia remains a powerful market driver. Indie developers are finding huge success with modern takes on classic genres. The 'pixel art' aesthetic is trending high on platforms like Steam and TikTok.",
-        style: ""
+        style: "md:col-span-1"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ export const sampleGalleryData = [
         query: "AI recipe generator app",
         score: 82,
         rationale: "Smart home integration is moving into the kitchen. AI's ability to create recipes based on available ingredients and dietary needs is a compelling use case with growing search volume and media mentions.",
-        style: "lg:col-span-2"
+        style: "md:col-span-1"
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ export const sampleGalleryData = [
         query: "neighborhood community app",
         score: 68,
         rationale: "While large social networks dominate, there's a counter-trend towards smaller, more intimate community platforms. Focus on privacy and local events is showing steady growth in app stores.",
-        style: "lg:col-span-3"
+        style: "md:col-span-2"
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ export const sampleGalleryData = [
         query: "tools for content creators",
         score: 91,
         rationale: "As the creator economy matures, demand for tools that streamline content creation, monetization, and audience management is skyrocketing. This B2B market has strong growth signals.",
-        style: ""
+        style: "md:col-span-1"
     }
 ];
 

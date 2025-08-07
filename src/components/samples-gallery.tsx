@@ -11,7 +11,7 @@ const SamplesGallery = () => {
                     Explore examples of our AI-driven analysis to see how different trends are scored and why they are relevant.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-fr">
                 {sampleGalleryData.map((sample) => (
                     <div key={sample.id} className={`${sample.style} group relative`}>
                         <div className="absolute -inset-px bg-gradient-accent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient"></div>
