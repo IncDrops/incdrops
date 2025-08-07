@@ -38,7 +38,7 @@ export const sampleGalleryData = [
         query: "neighborhood community app",
         score: 68,
         rationale: "While large social networks dominate, there's a counter-trend towards smaller, more intimate community platforms. Focus on privacy and local events is showing steady growth in app stores.",
-        style: "md:col-span-2"
+        style: "md:col-span-1"
     },
     {
         id: 6,
@@ -90,7 +90,7 @@ export const adCardsData = [
   {
     id: 5,
     industry: "Finance/Fintech",
-    image: "/fintech-card.jpg",
+    image: "https://placehold.co/1200x800.png",
     "data-ai-hint": "digital finance",
     ctaText: "Invest Smarter",
     link: "#",
@@ -733,3 +733,5 @@ export const blogPosts = [
 
 
     
+
+

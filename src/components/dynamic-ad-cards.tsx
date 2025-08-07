@@ -9,9 +9,9 @@ import { Badge } from "./ui/badge";
 
 const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group rounded-2xl">
-        <div className="absolute -inset-1 bg-gradient-accent blur opacity-25 group-hover:opacity-40 transition-opacity duration-500 animate-gradient"></div>
+        <div className="absolute -inset-1 bg-gradient-accent blur opacity-20 group-hover:opacity-30 transition-opacity duration-500 animate-gradient"></div>
         <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6 rounded-2xl">
-            <div className="aspect-video w-full relative">
+            <div className="aspect-video w-full relative rounded-lg">
                 <Image
                     src={ad.image}
                     alt={ad.industry}
@@ -45,6 +45,9 @@ const DynamicAdCards = () => {
         setShuffledAds([...adCardsData].sort(() => Math.random() - 0.5));
     }, []);
     
+    const smallCards = shuffledAds.filter(ad => ad.id <= 4);
+    const largeCards = shuffledAds.filter(ad => ad.id > 4);
+
     return (
         <section>
             <div className="mb-8 text-center">
@@ -52,17 +55,17 @@ const DynamicAdCards = () => {
                 <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Explore affiliate offers and services from our partners across leading industries.</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {shuffledAds.slice(0, 2).map((ad) => (
+                {smallCards.slice(0, 2).map((ad) => (
                     <AdCard key={ad.id} ad={ad} />
                 ))}
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                {shuffledAds.slice(2, 5).map((ad) => (
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
+                {smallCards.slice(2, 4).map((ad) => (
                     <AdCard key={ad.id} ad={ad} />
                 ))}
             </div>
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-                {shuffledAds.slice(5, 6).map((ad) => (
+             <div className="grid grid-cols-1 gap-8 mt-8">
+                {largeCards.map((ad) => (
                     <div key={ad.id} className="lg:col-span-2">
                         <AdCard ad={ad} />
                     </div>
@@ -73,3 +76,4 @@ const DynamicAdCards = () => {
 };
 
 export default DynamicAdCards;
+
