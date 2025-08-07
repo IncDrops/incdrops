@@ -5,6 +5,13 @@ import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
     return (
@@ -42,11 +49,25 @@ const BlogSection = () => {
                 <h2 className="text-3xl font-bold font-headline tracking-tight">Blog & Insights</h2>
                 <p className="text-muted-foreground mt-2">Trending topics on marketing, technology, and capitalizing on what's next.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {blogPosts.slice(0, 3).map((post) => (
-                    <BlogCard key={post.id} post={post} />
-                ))}
-            </div>
+            <Carousel
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+                className="w-full"
+            >
+                <CarouselContent>
+                    {blogPosts.map((post) => (
+                        <CarouselItem key={post.id} className="md:basis-1/2 lg:basis-1/3">
+                             <div className="p-1">
+                                <BlogCard post={post} />
+                            </div>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className="hidden sm:flex" />
+                <CarouselNext className="hidden sm:flex" />
+            </Carousel>
         </section>
     );
 };
