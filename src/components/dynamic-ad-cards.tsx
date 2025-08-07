@@ -16,7 +16,7 @@ const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
                     src={ad.image}
                     alt={ad.industry}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                     data-ai-hint={ad['data-ai-hint']}
                 />
             </div>
