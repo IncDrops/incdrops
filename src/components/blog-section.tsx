@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
     return (
-        <Card className="min-w-[300px] sm:min-w-[350px] flex-shrink-0 snap-start bg-card/60 backdrop-blur-lg border-border/20 shadow-lg h-full flex flex-col overflow-hidden group">
-            <div className="relative w-full h-[200px] overflow-hidden">
+        <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg h-full flex flex-col overflow-hidden group">
+            <div className="relative w-full aspect-[3/4] overflow-hidden">
                 <Image
                     src={post.images[0]}
                     alt={post.title}
@@ -42,11 +42,10 @@ const BlogSection = () => {
                 <h2 className="text-3xl font-bold font-headline tracking-tight">Blog & Insights</h2>
                 <p className="text-muted-foreground mt-2">Trending topics on marketing, technology, and capitalizing on what's next.</p>
             </div>
-            <div className="flex gap-6 pb-4 -mx-4 px-4 overflow-x-auto snap-x snap-mandatory">
-                {blogPosts.map((post) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {blogPosts.slice(0, 3).map((post) => (
                     <BlogCard key={post.id} post={post} />
                 ))}
-                 <div className="min-w-[2rem] flex-shrink-0"></div>
             </div>
         </section>
     );
