@@ -16,7 +16,7 @@ export default function TermsOfUse() {
             <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg">
                 <CardHeader>
                     <CardTitle className="text-3xl font-bold font-headline tracking-tight">Terms of Use</CardTitle>
-                    <p className="text-sm text-muted-foreground pt-1">Last Updated: August 6, 2024</p>
+                    <p className="text-sm text-muted-foreground pt-1">Last Updated: August 6, 2025</p>
                 </CardHeader>
                 <CardContent className="space-y-4 text-foreground/80">
                     <p>Welcome to IncDrops! These Terms of Use govern your access to and use of the IncDrops website and our AI-powered trend report services. By accessing or using our services, you agree to be bound by these Terms. If you do not agree, you are not authorized to use IncDrops.</p>

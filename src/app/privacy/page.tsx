@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             <Card className="bg-card/60 backdrop-blur-lg border-border/20 shadow-lg">
                 <CardHeader>
                     <CardTitle className="text-3xl font-bold font-headline tracking-tight">Privacy Policy</CardTitle>
-                    <p className="text-sm text-muted-foreground pt-1">Last Updated: August 6, 2024</p>
+                    <p className="text-sm text-muted-foreground pt-1">Last Updated: August 6, 2025</p>
                 </CardHeader>
                 <CardContent className="space-y-4 text-foreground/80">
                     <p>Your privacy is important to us. This Privacy Policy explains what IncDrops collects, how we use it, and your rights concerning that information. This policy applies to all information collected through our website, incdrops.com.</p>
