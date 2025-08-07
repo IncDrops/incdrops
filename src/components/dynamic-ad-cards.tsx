@@ -11,12 +11,12 @@ const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group overflow-hidden rounded-2xl">
         <div className="absolute -inset-1 bg-gradient-accent blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
         <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6 border border-border/20">
-            <div className="aspect-video w-full relative rounded-lg overflow-hidden">
+            <div className="aspect-video w-full relative rounded-lg">
                 <Image
                     src={ad.image}
                     alt={ad.industry}
                     fill
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:-translate-y-2 group-hover:drop-shadow-2xl rounded-lg"
                     data-ai-hint={ad['data-ai-hint']}
                 />
             </div>
