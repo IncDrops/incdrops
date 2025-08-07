@@ -90,7 +90,7 @@ export const adCardsData = [
   {
     id: 5,
     industry: "Finance/Fintech",
-    image: "https://placehold.co/1200x800.png",
+    image: "/fintech-card.jpg",
     "data-ai-hint": "digital finance",
     ctaText: "Invest Smarter",
     link: "#",
@@ -733,5 +733,6 @@ export const blogPosts = [
 
 
     
+
 
 
