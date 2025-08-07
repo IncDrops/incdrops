@@ -10,19 +10,17 @@ import { Badge } from "./ui/badge";
 const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group overflow-hidden rounded-2xl">
         <div className="absolute -inset-1 bg-gradient-accent blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
-        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col md:flex-row gap-6 border border-border/20">
-            <div className="md:w-1/2">
-                 <div className="aspect-video w-full relative rounded-lg overflow-hidden">
-                    <Image
-                        src={ad.image}
-                        alt={ad.industry}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={ad['data-ai-hint']}
-                    />
-                </div>
+        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6 border border-border/20">
+            <div className="aspect-video w-full relative rounded-lg overflow-hidden">
+                <Image
+                    src={ad.image}
+                    alt={ad.industry}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={ad['data-ai-hint']}
+                />
             </div>
-            <div className="md:w-1/2 flex flex-col justify-between">
+            <div className="flex flex-col justify-between flex-grow">
                 <div>
                     <Badge variant="secondary" className="mb-4">{ad.industry}</Badge>
                     <p className="text-foreground/80 mb-4">{ad.content}</p>
