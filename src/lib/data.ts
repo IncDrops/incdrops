@@ -55,7 +55,7 @@ export const adCardsData = [
   {
     id: 1,
     industry: "Automobile",
-    image: "/automobile.jpg",
+    image: "/automobile-card.jpg",
     "data-ai-hint": "electric car",
     ctaText: "Explore Future Mobility",
     link: "#",
@@ -717,5 +717,7 @@ export const blogPosts = [
 
 
 
+
+    
 
     
