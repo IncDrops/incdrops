@@ -9,8 +9,8 @@ import { Badge } from "./ui/badge";
 
 const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group rounded-2xl">
-        <div className="absolute -inset-1 bg-gradient-accent blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
-        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6">
+        <div className="absolute -inset-1 bg-gradient-accent blur opacity-25 group-hover:opacity-40 transition-opacity duration-500 animate-gradient"></div>
+        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6 rounded-2xl">
             <div className="aspect-video w-full relative rounded-lg">
                 <Image
                     src={ad.image}
