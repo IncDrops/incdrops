@@ -11,7 +11,7 @@ const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group rounded-2xl">
         <div className="absolute -inset-1 bg-gradient-accent blur opacity-25 group-hover:opacity-40 transition-opacity duration-500 animate-gradient"></div>
         <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col gap-6 rounded-2xl">
-            <div className="aspect-video w-full relative rounded-lg">
+            <div className="aspect-video w-full relative">
                 <Image
                     src={ad.image}
                     alt={ad.industry}
@@ -59,6 +59,13 @@ const DynamicAdCards = () => {
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 {shuffledAds.slice(2, 5).map((ad) => (
                     <AdCard key={ad.id} ad={ad} />
+                ))}
+            </div>
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+                {shuffledAds.slice(5, 6).map((ad) => (
+                    <div key={ad.id} className="lg:col-span-2">
+                        <AdCard ad={ad} />
+                    </div>
                 ))}
             </div>
         </section>

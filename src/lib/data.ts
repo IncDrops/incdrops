@@ -96,6 +96,15 @@ export const adCardsData = [
     ctaText: "Invest Smarter",
     link: "#",
     content: "AI-driven insights to help you navigate the markets and grow your wealth."
+  },
+  {
+    id: 6,
+    industry: "AI & Automation",
+    image: "https://placehold.co/1200x800.png",
+    "data-ai-hint": "ai automation",
+    ctaText: "Future-Proof Now",
+    link: "#",
+    content: "Transform workflows with intelligent automation. Our AI tools adapt, predict, and execute — so you don’t have to."
   }
 ];
 
