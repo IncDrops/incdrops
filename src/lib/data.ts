@@ -1,4 +1,5 @@
 
+
 export const sampleGalleryData = [
     {
         id: 1,
@@ -54,7 +55,7 @@ export const adCardsData = [
   {
     id: 1,
     industry: "Automobile",
-    image: "https://placehold.co/600x400.png",
+    image: "/automobile.jpg",
     "data-ai-hint": "electric car",
     ctaText: "Explore Future Mobility",
     link: "#",
@@ -63,7 +64,7 @@ export const adCardsData = [
   {
     id: 2,
     industry: "Tech",
-    image: "https://placehold.co/600x400.png",
+    image: "/tech-card.jpg",
     "data-ai-hint": "futuristic laptop",
     ctaText: "Upgrade Your Workflow",
     link: "#",
@@ -72,7 +73,7 @@ export const adCardsData = [
   {
     id: 3,
     industry: "Mobile Smart Devices",
-    image: "https://placehold.co/600x400.png",
+    image: "/mobile-device-card.jpg",
     "data-ai-hint": "smartphone concept",
     ctaText: "Experience the Next Generation",
     link: "#",
@@ -81,7 +82,7 @@ export const adCardsData = [
   {
     id: 4,
     industry: "Software",
-    image: "https://placehold.co/600x400.png",
+    image: "/software-card.jpg",
     "data-ai-hint": "code software",
     ctaText: "Build Without Limits",
     link: "#",
@@ -90,7 +91,7 @@ export const adCardsData = [
   {
     id: 5,
     industry: "Finance/Fintech",
-    image: "https://placehold.co/600x400.png",
+    image: "/fintech-card.jpg",
     "data-ai-hint": "digital finance",
     ctaText: "Invest Smarter",
     link: "#",
@@ -715,3 +716,6 @@ export const blogPosts = [
     
 
 
+
+
+    
