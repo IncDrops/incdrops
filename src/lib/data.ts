@@ -1,5 +1,4 @@
 
-
 export const sampleGalleryData = [
     {
         id: 1,
@@ -730,3 +729,4 @@ export const blogPosts = [
     
 
     
+
