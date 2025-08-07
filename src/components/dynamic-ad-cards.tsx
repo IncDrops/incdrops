@@ -10,10 +10,9 @@ import { Badge } from "./ui/badge";
 const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
     <div className="relative group overflow-hidden rounded-2xl">
         <div className="absolute -inset-1 bg-gradient-accent blur opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-gradient"></div>
-        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col justify-between border border-border/20">
-            <div>
-                <Badge variant="secondary" className="mb-4">{ad.industry}</Badge>
-                <div className="aspect-video w-full relative rounded-lg overflow-hidden mb-4">
+        <div className="relative p-6 bg-card/80 backdrop-blur-lg h-full flex flex-col md:flex-row gap-6 border border-border/20">
+            <div className="md:w-1/2">
+                 <div className="aspect-video w-full relative rounded-lg overflow-hidden">
                     <Image
                         src={ad.image}
                         alt={ad.industry}
@@ -22,14 +21,19 @@ const AdCard = ({ ad }: { ad: typeof adCardsData[0] }) => (
                         data-ai-hint={ad['data-ai-hint']}
                     />
                 </div>
-                <p className="text-foreground/80 mb-4">{ad.content}</p>
             </div>
-            <Button asChild className="w-full font-bold bg-accent text-accent-foreground">
-                <a href={ad.link} target="_blank" rel="noopener noreferrer">
-                    {ad.ctaText}
-                    <ArrowUpRight className="ml-2 h-4 w-4" />
-                </a>
-            </Button>
+            <div className="md:w-1/2 flex flex-col justify-between">
+                <div>
+                    <Badge variant="secondary" className="mb-4">{ad.industry}</Badge>
+                    <p className="text-foreground/80 mb-4">{ad.content}</p>
+                </div>
+                <Button asChild className="w-full font-bold bg-accent text-accent-foreground mt-auto">
+                    <a href={ad.link} target="_blank" rel="noopener noreferrer">
+                        {ad.ctaText}
+                        <ArrowUpRight className="ml-2 h-4 w-4" />
+                    </a>
+                </Button>
+            </div>
         </div>
     </div>
 );
@@ -49,13 +53,13 @@ const DynamicAdCards = () => {
                 <h2 className="text-3xl font-bold font-headline tracking-tight">Featured Opportunities</h2>
                 <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Explore affiliate offers and services from our partners across leading industries.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {shuffledAds.slice(0, 3).map((ad) => (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {shuffledAds.slice(0, 2).map((ad) => (
                     <AdCard key={ad.id} ad={ad} />
                 ))}
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                {shuffledAds.slice(3, 5).map((ad) => (
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                {shuffledAds.slice(2, 5).map((ad) => (
                     <AdCard key={ad.id} ad={ad} />
                 ))}
             </div>
