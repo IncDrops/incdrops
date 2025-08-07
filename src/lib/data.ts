@@ -99,7 +99,7 @@ export const adCardsData = [
   {
     id: 6,
     industry: "AI & Automation",
-    image: "https://placehold.co/1200x800.png",
+    image: "/ai-automation-card.jpg",
     "data-ai-hint": "ai automation",
     ctaText: "Future-Proof Now",
     link: "#",
@@ -730,3 +730,6 @@ export const blogPosts = [
 
     
 
+
+
+    
